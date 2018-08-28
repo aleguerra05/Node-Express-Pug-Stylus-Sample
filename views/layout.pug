@@ -1,0 +1,15 @@
+doctype
+html
+  head
+    title #{title} - First Site Node + Express + Pug + Stylus
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 #{title} - First Site Node + Express + Pug + Stylus
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p Running on node with Express, Jade and Stylus

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 #{post.text}
+
+block sidebar
+  .widget
+    h1 #{post.title}
+    p created by:
+    h1 #{post.author}

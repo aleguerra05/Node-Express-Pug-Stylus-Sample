@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 PostList:
+  
+  ul
+  each val in posts
+    p
+    a(href='/posts/' + val.id) Post #{val.id}
