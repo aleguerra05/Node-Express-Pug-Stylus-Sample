@@ -3,6 +3,8 @@ extends layout
 block content
   p
     a(href='./') PostList
+  p
+    a(href='/posts/' + (post.id + 1)) Next post
 
   h1 #{post.title}
   h2 #{post.text}
