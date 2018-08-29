@@ -1,10 +1,31 @@
 extends layout
 
 block content
-  h1 #{post.text}
+  p
+    a(href='./') PostList
+
+  h1 #{post.title}
+  h2 #{post.text}
+  p
+  if images.length >0
+    p Images
+  else
+    p No images
+
+block out
+  p
+    each ima in images
+        .img
+            img(src='../'+ima.path)
+
 
 block sidebar
   .widget
-    h1 #{post.title}
     p created by:
     h1 #{post.author}
+    if comments.length >0
+        p Comments:
+    else
+        p No comments
+    each val in comments
+        p #{val.body}
