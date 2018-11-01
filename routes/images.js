@@ -6,11 +6,31 @@ var multer = require("multer");
 var Client = require('node-rest-client').Client;
 var client = new Client();
 client.registerMethod("createImage", "http://localhost:3001/images/", "POST");
+client.registerMethod("deleteImage", "http://localhost:3001/images/${id}", "DELETE");
 
 const upload = multer({
     dest: "/public"
     // you might also want to set some limits: https://github.com/expressjs/multer#limits
   });
+
+router.post('/del/:imaId',function (req, res, next) {
+        console.log("delete "+req.params.imaId);
+
+        var args = {
+            path: { id:req.params.imaId}
+        };
+
+        client.methods.deleteImage(args, function (data, response) {
+            console.log(response.statusCode);
+            if (response.statusCode == 200) {
+                res.redirect('back');
+            }
+            if (response.statusCode == 404) {
+                res.render('message', { title: 'Image no found!', message: '404 - Image no found!' });
+            }
+        });
+    }
+);
 
 router.post('/', 
     upload.single("filetoupload" /* name attribute of <file> element in your form */),
@@ -22,7 +42,7 @@ router.post('/',
                 if (err) return handleError(err, res);
 
                 var args = {
-                    data: { path:'images/'+req.file.originalname, postId: req.body.postId},
+                    data: { path:'images/'+req.file.originalname, postId:req.body.postId},
                     headers: { "Content-Type": "application/json" }
                 };
 
@@ -32,7 +52,7 @@ router.post('/',
                         client.get("http://localhost:3001/images/", function (data, response) {
                             console.log(response.statusCode);
                             if (response.statusCode == 200) {
-                                res.render('message', { title: 'Added image!', message: 'Added image!' });
+                                res.redirect('back');
                             }
                             else {
                                 res.render('message', { title: 'Error', message: 'Error: ' + response.statusMessage });

@@ -68,6 +68,16 @@
       "id": 4,
       "path": "images/img4.jpg",
       "postId": 4
+    },
+    {
+      "path": "images/habana.jpg",
+      "postId": "1",
+      "id": 5
+    },
+    {
+      "path": "images/habana.jpg",
+      "postId": "2",
+      "id": 6
     }
   ],
   "profile": {

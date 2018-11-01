@@ -11,15 +11,22 @@ block content
   p
   if images.length >0
     p Images
-  else
-    p No images
-
-block out
-  p
     each ima in images
         .img
             img(src='../'+ima.path)
+        form(action="/images/del/"+ima.id method="POST")
+          input(type="submit" value="Delete")
+  else
+    p No images
+  form(action="/images" method="POST" encType="multipart/form-data")
+    p PostId:
+      input(type="text" name="postId" placeholder="" value=post.id readonly)
+    p UploadImages:
+      input(type="file" name="filetoupload" placeholder="")
+    input(type="submit" value="Submit")
 
+block out
+  p
 
 block sidebar
   .widget
