@@ -6,6 +6,7 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 client.registerMethod("getPosts", "http://localhost:3001/posts/${id}", "GET");
+client.registerMethod("deletePost", "http://localhost:3001/posts/${id}", "DELETE");
 client.registerMethod("createPosts", "http://localhost:3001/posts/", "POST");
 client.registerMethod("getComments", "http://localhost:3001/posts/${id}/comments", "GET");
 client.registerMethod("getImages", "http://localhost:3001/posts/${id}/images", "GET");
@@ -28,9 +29,23 @@ router.get('/', function (req, res, next) {
 router.post('/', function (req, res, next) {
     console.log(req.body);
 
-    if (req.body != null&&req.body.title != null && req.body.text != null && req.body.author != null) {
+    if (req.body != null 
+        && req.body.code != null 
+        && req.body.title != null 
+        && req.body.description != null
+        && req.body.startDate != null
+        && req.body.endDate != null
+        && req.body.dateMask != null
+        ) {
         var args = {
-            data: { title: req.body.title, author: req.body.author, text: req.body.text },
+            data: { 
+                code: req.body.code, 
+                title: req.body.title, 
+                description: req.body.description,
+                startDate: req.body.startDate,
+                endDate: req.body.endDate,
+                dateMask: req.body.dateMask
+            },
             headers: { "Content-Type": "application/json" }
         };
 
@@ -83,6 +98,24 @@ router.get('/:postId(\\d+)', function (req, res, next) {
         }
         else {
             res.render('message', { title: 'Error', message: 'PostId ' + req.params.postId + ' ' + response.statusMessage });
+        }
+    });
+});
+
+//router.delete('/:postId(\\d+)', function (req, res, next) {
+router.post('/del/:postId',function (req, res, next) {
+    var args = {
+        path: { "id": req.params.postId }
+    }
+    console.log(req.params.postId);
+        
+    client.methods.deletePost(args, function (data, response) {
+        if (response.statusCode == 200) {
+            res.render('message', { title: 'Post Deleted', message: 'Post ' + req.params.postId + ' deleted!' });
+        }
+        else
+        {
+            res.render('message', { title: 'Error', message: 'Error deleting post: ' +args.id + '\n' + response.statusMessage });
         }
     });
 });

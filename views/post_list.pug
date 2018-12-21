@@ -13,10 +13,16 @@ block content
   p
   h1= "Add a post!"
   form(action="/posts" method="POST")
+    p Code:
+      input(type="text" name="code" placeholder="")
     p Title:
-      input(type="text" name="title" placeholder="")
-    p Author:
-      input(type="text" name="author" placeholder="")
-    p Text:
-      textarea(name="text" placeholder="" rows="4" cols="60")
-    input(type="submit" value="Submit")
+      textarea(type="text" name="title" placeholder="" rows="1" cols="60")
+    p Description:
+      textarea(name="description" placeholder="" rows="6" cols="60")
+    p Date Mask:
+      input(type="text" name="dateMask" placeholder="")
+    p Start Date:
+      input(type="text" name="startDate" placeholder="")
+    p End Date:
+      input(type="text" name="endDate" placeholder="")
+    input(type="submit" value="Add Post")
