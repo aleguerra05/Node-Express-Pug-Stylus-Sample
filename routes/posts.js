@@ -17,10 +17,10 @@ router.get('/', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('post_list', { title: 'Posts List ', posts: data });
+            res.render('post_list', { title: 'Lista de Artículos ', posts: data });
         }
         else {
-            res.render('message', { title: 'Error', message: 'Post count: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
         }
     });
 
@@ -58,16 +58,16 @@ router.post('/', function (req, res, next) {
                         res.render('post_list', { title: 'Added post!', posts: data });
                     }
                     else {
-                        res.render('message', { title: 'Error', message: 'Post count: ' + response.statusMessage });
+                        res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
                     }
                 });
             }
             else
-                res.render('message', { title: 'Error', message: 'Error ading post!' + response.statusMessage });
+                res.render('message', { title: 'Error', message: 'Error adicionando Artículo!' + response.statusMessage });
         });
     }
     else
-        res.render('message', { title: 'Error', message: 'Error ading post! ParamsRequired'});        
+        res.render('message', { title: 'Error', message: 'Error adicionando Artículo! Faltan campos por llenar'});        
 });
 
 router.get('/:postId(\\d+)', function (req, res, next) {
@@ -92,12 +92,12 @@ router.get('/:postId(\\d+)', function (req, res, next) {
                     console.log(images);
                     console.log(imagesResponse.statusCode);
 
-                    res.render('post', { title: 'Post ' + req.params.postId, post: data, comments: comments, images: images });
+                    res.render('post', { title: 'Artículo ' + req.params.postId, post: data, comments: comments, images: images });
                 });
             });
         }
         else {
-            res.render('message', { title: 'Error', message: 'PostId ' + req.params.postId + ' ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Artículo ' + req.params.postId + ' detalles: ' + response.statusMessage });
         }
     });
 });

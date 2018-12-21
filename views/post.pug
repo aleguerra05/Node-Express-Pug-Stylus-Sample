@@ -2,9 +2,9 @@ extends layout
 
 block content
   p
-    a(href='./') PostList
+    a(href='./') Lista de Artículos
   p
-    a(href='/posts/' + (post.id + 1)) Next post
+    a(href='/posts/' + (post.id + 1)) Siguiente Artículo
 
   h1 #{post.code}
 
@@ -13,20 +13,20 @@ block content
   h2 #{post.description}
   p
   if images.length >0
-    p Images
+    p Imágenes
     each ima in images
         .img
             img(src='../'+ima.path)
         form(action="/images/del/"+ima.id method="POST")
           input(type="submit" value="Delete Image")
   else
-    p No images
+    p No posee Imágenes
   form(action="/images" method="POST" encType="multipart/form-data")
     //p PostId:
     input(type="hidden" name="postId" placeholder="" value=post.id readonly)
-    p UploadImages:
+    p Agregar Imagen:
       input(type="file" name="filetoupload" placeholder="")
-    input(type="submit" value="Upload Image")
+    input(type="submit" value="Agregar Imagen")
   
   p
 
@@ -34,17 +34,17 @@ block content
     
     //p PostId:
     input(type="hidden" name="postId" placeholder="" value=post.id readonly)
-    input(type="submit" value="DELETE POST!!!!!")
+    input(type="submit" value="ELIMINAR POST")
 
 block out
   p
 
 block sidebar
   .widget
-    p Date Mask:
+    p Máscara de Fecha:
     h1 #{post.dateMask}
-    p  Start Date:
+    p  Fecha Inicio:
     h1 #{post.startDate}
-    p End Date:
+    p Fecha Fin:
     h1 #{post.endDate}
     

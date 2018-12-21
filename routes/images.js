@@ -26,7 +26,7 @@ router.post('/del/:imaId',function (req, res, next) {
                 res.redirect('back');
             }
             if (response.statusCode == 404) {
-                res.render('message', { title: 'Image no found!', message: '404 - Image no found!' });
+                res.render('message', { title: 'Imagen no encontrada!', message: '404 - Imagen no encontrada!' });
             }
         });
     }
@@ -60,12 +60,12 @@ router.post('/',
                         });
                     }
                     else
-                        res.render('message', { title: 'Error', message: 'Error ading image!' + response.statusMessage });
+                        res.render('message', { title: 'Error', message: 'Error agregando Imagen!' + response.statusMessage });
                 });
             });
         }
         else{
-            res.render('message', { title: 'No image selected image!', message: 'No image!' });
+            res.render('message', { title: 'No ha seleccionado ninguna Imagen!', message: 'Sin Imagen!' });
         }
     }
 );

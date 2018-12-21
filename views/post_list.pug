@@ -2,27 +2,27 @@ extends layout
 
 block content
   p
-      a(href='../') Home
+      a(href='../') Inicio
 
-  h1 PostList:
+  h1 Lista de Artículos:
   
   ul
   each val in posts
     p
-    a(href='/posts/' + val.id) Post #{val.id}
+    a(href='/posts/' + val.id) Artículo #{val.id}
   p
-  h1= "Add a post!"
+  h1= "Adicionar un Artículo"
   form(action="/posts" method="POST")
-    p Code:
+    p Código:
       input(type="text" name="code" placeholder="")
-    p Title:
+    p Título:
       textarea(type="text" name="title" placeholder="" rows="1" cols="60")
-    p Description:
+    p Descripción:
       textarea(name="description" placeholder="" rows="6" cols="60")
-    p Date Mask:
+    p Máscara de Fecha:
       input(type="text" name="dateMask" placeholder="")
-    p Start Date:
+    p Fecha Inicio:
       input(type="text" name="startDate" placeholder="")
-    p End Date:
+    p Fecha Fin:
       input(type="text" name="endDate" placeholder="")
-    input(type="submit" value="Add Post")
+    input(type="submit" value="Aceptar")
