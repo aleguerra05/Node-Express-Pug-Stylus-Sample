@@ -6,8 +6,11 @@ block content
   p
     a(href='/posts/' + (post.id + 1)) Next post
 
+  h1 #{post.code}
+
   h1 #{post.title}
-  h2 #{post.text}
+  p
+  h2 #{post.description}
   p
   if images.length >0
     p Images
@@ -25,6 +28,8 @@ block content
       input(type="file" name="filetoupload" placeholder="")
     input(type="submit" value="Upload Image")
   
+  p
+
   form(action="/posts/del/"+post.id method="POST")
     
     //p PostId:
@@ -36,11 +41,10 @@ block out
 
 block sidebar
   .widget
-    p created by:
-    h1 #{post.author}
-    if comments.length >0
-        p Comments:
-    else
-        p No comments
-    each val in comments
-        p #{val.body}
+    p Date Mask:
+    h1 #{post.dateMask}
+    p  Start Date:
+    h1 #{post.startDate}
+    p End Date:
+    h1 #{post.endDate}
+    

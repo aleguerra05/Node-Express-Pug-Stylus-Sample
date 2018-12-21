@@ -29,9 +29,23 @@ router.get('/', function (req, res, next) {
 router.post('/', function (req, res, next) {
     console.log(req.body);
 
-    if (req.body != null&&req.body.title != null && req.body.text != null && req.body.author != null) {
+    if (req.body != null 
+        && req.body.code != null 
+        && req.body.title != null 
+        && req.body.description != null
+        && req.body.startDate != null
+        && req.body.endDate != null
+        && req.body.dateMask != null
+        ) {
         var args = {
-            data: { title: req.body.title, author: req.body.author, text: req.body.text },
+            data: { 
+                code: req.body.code, 
+                title: req.body.title, 
+                description: req.body.description,
+                startDate: req.body.startDate,
+                endDate: req.body.endDate,
+                dateMask: req.body.dateMask
+            },
             headers: { "Content-Type": "application/json" }
         };
 
