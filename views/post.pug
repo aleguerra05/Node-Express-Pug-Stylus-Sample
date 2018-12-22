@@ -6,12 +6,22 @@ block content
   p
     a(href='/posts/' + (post.id + 1)) Siguiente Artículo
 
-  h1 #{post.code}
+  form(action="/posts/edit/"+post.id method="POST")
+    input(type="hidden" name="id" placeholder="" value=post.id)
+    p Codigo:
+      input(type="text" name="code" placeholder="" value=post.code)
+    p Título:
+      textarea(name="title" placeholder="" rows="1" cols="60" value=post.title) #{post.title}
+    p Descripción:
+      textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
+    p Máscara de Fecha:
+      input(type="text" name="dateMask" placeholder="" value=post.dateMask)
+    p Fecha Inicio:
+      input(type="text" name="startDate" placeholder="" value=post.startDate)
+    p Fecha Fin:
+      input(type="text" name="endDate" placeholder="" value=post.endDate)
+    input(type="submit" value="Actualizar")
 
-  h1 #{post.title}
-  p
-  h2 #{post.description}
-  p
   if images.length >0
     p Imágenes
     each ima in images
@@ -38,13 +48,4 @@ block content
 
 block out
   p
-
-block sidebar
-  .widget
-    p Máscara de Fecha:
-    h1 #{post.dateMask}
-    p  Fecha Inicio:
-    h1 #{post.startDate}
-    p Fecha Fin:
-    h1 #{post.endDate}
     

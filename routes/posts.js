@@ -7,6 +7,7 @@ var client = new Client();
 
 client.registerMethod("getPosts", "http://localhost:3001/posts/${id}", "GET");
 client.registerMethod("deletePost", "http://localhost:3001/posts/${id}", "DELETE");
+client.registerMethod("editPost", "http://localhost:3001/posts/${id}", "PUT");
 client.registerMethod("createPosts", "http://localhost:3001/posts/", "POST");
 client.registerMethod("getComments", "http://localhost:3001/posts/${id}/comments", "GET");
 client.registerMethod("getImages", "http://localhost:3001/posts/${id}/images", "GET");
@@ -55,7 +56,7 @@ router.post('/', function (req, res, next) {
                 client.get("http://localhost:3001/posts/", function (data, response) {
                     console.log(response.statusCode);
                     if (response.statusCode == 200) {
-                        res.render('post_list', { title: 'Added post!', posts: data });
+                        res.render('post_list', { title: 'Artículo adicionado satisfactoriamente', posts: data });
                     }
                     else {
                         res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
@@ -71,7 +72,6 @@ router.post('/', function (req, res, next) {
 });
 
 router.get('/:postId(\\d+)', function (req, res, next) {
-
     var args = {
         path: { "id": req.params.postId }
     }
@@ -102,7 +102,47 @@ router.get('/:postId(\\d+)', function (req, res, next) {
     });
 });
 
-//router.delete('/:postId(\\d+)', function (req, res, next) {
+router.post('/edit/:postId(\\d+)', function (req, res, next) {
+    console.log(req.body);
+
+    if (req.body != null 
+        && req.body.id !=null
+        && req.body.code != null 
+        && req.body.title != null 
+        && req.body.description != null
+        && req.body.startDate != null
+        && req.body.endDate != null
+        && req.body.dateMask != null) {
+        var args = {
+            data: { 
+                id: req.body.id,
+                code: req.body.code, 
+                title: req.body.title, 
+                description: req.body.description,
+                startDate: req.body.startDate,
+                endDate: req.body.endDate,
+                dateMask: req.body.dateMask
+            },
+            path:{
+              id: req.body.id  
+            },
+            headers: { "Content-Type": "application/json" }
+        };
+        client.methods.editPost(args, function (data, response) {
+            console.log(response.statusCode);
+            if (response.statusCode == 200) {
+                //res.render('post', { title: 'Articulo actualizado satisfactoriamente!', posts: data });
+                res.redirect('back');
+            }
+            else {
+                res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+            }
+        });
+    }
+    else
+        res.render('message', { title: 'Error', message: 'Error actualizando Artículo! Faltan campos por llenar'});        
+});
+
 router.post('/del/:postId',function (req, res, next) {
     var args = {
         path: { "id": req.params.postId }
