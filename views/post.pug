@@ -12,8 +12,12 @@ block content
       input(type="text" name="code" placeholder="" value=post.code)
     p Título:
       textarea(name="title" placeholder="" rows="1" cols="60" value=post.title) #{post.title}
+    p Título Inglés:
+      textarea(name="title_en" placeholder="" rows="1" cols="60" value=post.title_en) #{post.title_en}
     p Descripción:
       textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
+    p Descripción Inglés:
+      textarea(name="description_en" placeholder="" value=post.description_en rows="6" cols="60") #{post.description_en}
     p Máscara de Fecha:
       input(type="text" name="dateMask" placeholder="" value=post.dateMask)
     p Fecha Inicio:

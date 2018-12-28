@@ -33,7 +33,9 @@ router.post('/', function (req, res, next) {
     if (req.body != null 
         && req.body.code != null 
         && req.body.title != null 
+        && req.body.title_en != null 
         && req.body.description != null
+        && req.body.description_en != null
         && req.body.startDate != null
         && req.body.endDate != null
         && req.body.dateMask != null
@@ -42,7 +44,9 @@ router.post('/', function (req, res, next) {
             data: { 
                 code: req.body.code, 
                 title: req.body.title, 
+                title_en: req.body.title_en, 
                 description: req.body.description,
+                description_en: req.body.description_en,
                 startDate: req.body.startDate,
                 endDate: req.body.endDate,
                 dateMask: req.body.dateMask
@@ -109,7 +113,9 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
         && req.body.id !=null
         && req.body.code != null 
         && req.body.title != null 
+        && req.body.title_en != null 
         && req.body.description != null
+        && req.body.description_en != null
         && req.body.startDate != null
         && req.body.endDate != null
         && req.body.dateMask != null) {
@@ -118,7 +124,9 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
                 id: req.body.id,
                 code: req.body.code, 
                 title: req.body.title, 
+                title_en: req.body.title_en, 
                 description: req.body.description,
+                description_en: req.body.description_en,
                 startDate: req.body.startDate,
                 endDate: req.body.endDate,
                 dateMask: req.body.dateMask

@@ -4,7 +4,9 @@
       "id": 1,
       "code": "ABC-123",
       "title": "From its medieval origins to the digital era OK!",
+      "title_en": "From its medieval origins to the digital era OK!",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "startDate": "1999-21-12",
       "endDate": "2019-21-12",
       "dateMask": "yyyy"
@@ -12,7 +14,9 @@
     {
       "code": "ABC-345",
       "title": "this is another title",
+      "title_en": "this is another title",
       "description": "and this is the description of another post",
+      "description_en": "and this is the description of another post",
       "startDate": "1986-09-13",
       "endDate": "1999-05-15",
       "dateMask": "dd/mm/yyyy",
@@ -21,7 +25,9 @@
     {
       "code": "ZXC-987",
       "title": "Third title post",
+      "title_en": "Third title post",
       "description": "description",
+      "description_en": "description",
       "startDate": "1986-09-13",
       "endDate": "1999-05-15",
       "dateMask": "yyyy",
