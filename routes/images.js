@@ -162,8 +162,39 @@ router.post('/edit/:imaId(\\d+)', function (req, res, next) {
     client.methods.editImage(args, function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            //res.render('post', { title: 'Contenido actualizado satisfactoriamente!', posts: data });
-            res.redirect('back');
+            console.log("redirect back")
+            var dateTime = new Date()
+            console.log("postId:" + req.body.postId)
+            
+            var postArgs = {
+                data: { 
+                    id: req.body.postId,
+                    updatedDate: dateTime,
+                    code:req.body.code,
+                    title:req.body.title,
+                    title_en:req.body.title_en,
+                    type:req.body.type,
+                    description:req.body.description,
+                    description_en:req.body.description_en,
+                    startDate:req.body.startDate,
+                    endDate:req.body.endDate,
+                    dateMask:req.body.dateMask
+                },
+                path:{
+                    id: req.body.postId
+                },
+                headers: { 
+                    "Content-Type": "application/json" 
+                }
+            };
+
+            client.methods.editPost(postArgs, function (data, response) {
+                console.log(response.statusCode);
+                if (response.statusCode == 200) {
+                    res.redirect('back');
+                }
+            });
+            //res.redirect('back');
         }
         else {
             res.render('message', { title: 'Error', message: 'Error actualizado descripción de la Imagen: ' + response.statusMessage });
