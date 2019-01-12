@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('post_list', { title: 'Lista de Artículos ', posts: data });
+            res.render('post_list', { title: 'Nuevo Artículo'});
         }
         else {
             res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
