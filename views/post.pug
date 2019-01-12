@@ -11,6 +11,10 @@ block content
 
   form(action="/posts/edit/"+post.id method="POST")
     input(type="hidden" name="id" placeholder="" value=post.id)
+    
+    h3 Fecha de Actualización: 
+    p #{post.updatedDate}
+    
     p Código:
       textarea(type="text" name="code" placeholder="" rows="1" cols="60" value=post.code) #{post.code}
     p Título:

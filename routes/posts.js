@@ -28,8 +28,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    console.log(req.body);
-
+    var dateTime = new Date();
     if (req.body != null 
         && req.body.code != null 
         && req.body.title != null 
@@ -49,6 +48,7 @@ router.post('/', function (req, res, next) {
                 description_en: req.body.description_en,
                 startDate: req.body.startDate,
                 endDate: req.body.endDate,
+                updatedDate: dateTime, //"2019-01-12 12:00:00",
                 dateMask: req.body.dateMask
             },
             headers: { "Content-Type": "application/json" }
@@ -107,8 +107,7 @@ router.get('/:postId(\\d+)', function (req, res, next) {
 });
 
 router.post('/edit/:postId(\\d+)', function (req, res, next) {
-    console.log(req.body);
-
+    var dateTime = new Date();
     if (req.body != null 
         && req.body.id !=null
         && req.body.code != null 
@@ -129,6 +128,7 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
                 description_en: req.body.description_en,
                 startDate: req.body.startDate,
                 endDate: req.body.endDate,
+                updatedDate: dateTime, //"2019-01-12 12:00:00",
                 dateMask: req.body.dateMask
             },
             path:{
