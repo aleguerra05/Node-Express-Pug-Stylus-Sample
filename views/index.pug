@@ -2,12 +2,12 @@ extends layout
 
 block content
   p
-    a(href='/posts') Insertar Nuevo Artículo
+    a(href='/posts') Insertar Nuevo Contenido
 
-  h1 Lista de Artículos:
+  h1 Lista de Contenidos:
   
   ul
   each val in posts
     p
-    a(href='/posts/' + val.id) Artículo #{val.id} (#{val.code})
+    a(href='/posts/' + val.id) Contenido #{val.code} (#{val.id})
   p

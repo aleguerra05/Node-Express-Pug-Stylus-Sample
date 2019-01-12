@@ -17,10 +17,10 @@ router.get('/', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('post_list', { title: 'Nuevo Artículo'});
+            res.render('post_list', { title: 'Nuevo Contenido'});
         }
         else {
-            res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
         }
     });
 
@@ -61,19 +61,19 @@ router.post('/', function (req, res, next) {
                 client.get("http://localhost:3001/posts/", function (data, response) {
                     console.log(response.statusCode);
                     if (response.statusCode == 200) {
-                        res.render('post_list', { title: 'Artículo adicionado satisfactoriamente', posts: data });
+                        res.render('post_list', { title: 'Contenido adicionado satisfactoriamente', posts: data });
                     }
                     else {
-                        res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+                        res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
                     }
                 });
             }
             else
-                res.render('message', { title: 'Error', message: 'Error adicionando Artículo!' + response.statusMessage });
+                res.render('message', { title: 'Error', message: 'Error adicionando Contenido!' + response.statusMessage });
         });
     }
     else
-        res.render('message', { title: 'Error', message: 'Error adicionando Artículo! Faltan campos por llenar'});        
+        res.render('message', { title: 'Error', message: 'Error adicionando Contenido! Faltan campos por llenar'});        
 });
 
 router.get('/:postId(\\d+)', function (req, res, next) {
@@ -93,12 +93,12 @@ router.get('/:postId(\\d+)', function (req, res, next) {
                 console.log(images);
                 console.log(imagesResponse.statusCode);
 
-                res.render('post', { title: 'Artículo ' + req.params.postId, post: data, images: images });
+                res.render('post', { title: 'Contenido ' + req.params.postId, post: data, images: images });
             });
             
         }
         else {
-            res.render('message', { title: 'Error', message: 'Artículo ' + req.params.postId + ' detalles: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Contenido ' + req.params.postId + ' detalles: ' + response.statusMessage });
         }
     });
 });
@@ -138,16 +138,16 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
         client.methods.editPost(args, function (data, response) {
             console.log(response.statusCode);
             if (response.statusCode == 200) {
-                //res.render('post', { title: 'Articulo actualizado satisfactoriamente!', posts: data });
+                //res.render('post', { title: 'Contenido actualizado satisfactoriamente!', posts: data });
                 res.redirect('back');
             }
             else {
-                res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+                res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
             }
         });
     }
     else
-        res.render('message', { title: 'Error', message: 'Error actualizando Artículo! Faltan campos por llenar'});        
+        res.render('message', { title: 'Error', message: 'Error actualizando Contenido! Faltan campos por llenar'});        
 });
 
 router.post('/del/:postId',function (req, res, next) {
@@ -158,11 +158,11 @@ router.post('/del/:postId',function (req, res, next) {
         
     client.methods.deletePost(args, function (data, response) {
         if (response.statusCode == 200) {
-            res.render('message', { title: 'Artículo Eliminado', message: 'Artículo ' + req.params.postId + ' eliminado!' });
+            res.render('message', { title: 'Contenido Eliminado', message: 'Contenido ' + req.params.postId + ' eliminado!' });
         }
         else
         {
-            res.render('message', { title: 'Error', message: 'Error eliminando Artículo: ' +args.id + '\n' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Error eliminando Contenido: ' +args.id + '\n' + response.statusMessage });
         }
     });
 });
@@ -171,10 +171,10 @@ router.get('/count', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('message', { title: 'Cantidad de Artículos', message: 'Cantidad de Artículos: ' + data.length });
+            res.render('message', { title: 'Cantidad de Contenidos', message: 'Cantidad de Contenidos: ' + data.length });
         }
         else {
-            res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
         }
     });
 });

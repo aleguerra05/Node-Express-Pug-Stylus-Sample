@@ -2,12 +2,12 @@ extends layout
 
 block content
   p
-    a(href='/') Lista de Artículos
+    a(href='/') Lista de Contenidos
   p
-    a(href='./') Insertar Nuevo Artículo
+    a(href='./') Insertar Nuevo Contenido
   
   //p
-    a(href='/posts/' + (post.id + 1)) Siguiente Artículo
+    a(href='/posts/' + (post.id + 1)) Siguiente Contenido
 
   form(action="/posts/edit/"+post.id method="POST")
     input(type="hidden" name="id" placeholder="" value=post.id)
@@ -37,12 +37,12 @@ block content
       textarea(type="text" name="startDate" placeholder="" rows="1" cols="60" value=post.startDate) #{post.startDate}
     p Fecha Fin:
       textarea(type="text" name="endDate" placeholder="" rows="1" cols="60" value=post.endDate) #{post.endDate}
-    input(type="submit" value="Actualizar Artículo")
+    input(type="submit" value="Actualizar Contenido")
 
   p
   form(action="/posts/del/"+post.id method="POST")  
     input(type="hidden" name="postId" placeholder="" value=post.id readonly)
-    input(type="submit" value="ELIMINAR ARTICULO")
+    input(type="submit" value="ELIMINAR CONTENIDO")
 
   p
   if images.length >0

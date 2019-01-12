@@ -2,11 +2,11 @@ extends layout
 
 block content
   p
-    a(href='../') Lista de Artículos
+    a(href='../') Lista de Contenidos
 
-  h1 Nuevo Artículo:
+  h1 Nuevo Contenido:
 
-  h1= "Adicionar un Artículo"
+  h1= "Adicionar un Contenido"
   form(action="/posts" method="POST")
     p Código:
       textarea(type="text" name="code" placeholder="" rows="1" cols="60")

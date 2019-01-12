@@ -12,10 +12,10 @@ router.get('/', function(req, res, next) {
   client.get("http://localhost:3001/posts/", function (data, response) {
       console.log(response.statusCode);
       if (response.statusCode == 200) {
-          res.render('index', { title: 'Lista de Artículos ', posts: data });
+          res.render('index', { title: 'Lista de Contenidos ', posts: data });
       }
       else {
-          res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
+          res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
       }
   });
 });
