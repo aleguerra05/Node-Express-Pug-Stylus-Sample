@@ -21,6 +21,12 @@ block content
       textarea(name="title" placeholder="" rows="1" cols="60" value=post.title) #{post.title}
     p Título Inglés:
       textarea(name="title_en" placeholder="" rows="1" cols="60" value=post.title_en) #{post.title_en}
+    P Tipo:
+      select(name="type" placeholder="") #{post.type}
+        option(value=obra selected=post.type=="obra"?true:false) obra
+        option(value=personalidad selected=post.type=="personalidad"?true:false) personalidad
+        option(value=hecho selected=post.type=="hecho"?true:false) hecho
+        value=post.type
     p Descripción:
       textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
     p Descripción Inglés:

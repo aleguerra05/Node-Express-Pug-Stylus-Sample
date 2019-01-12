@@ -33,6 +33,7 @@ router.post('/', function (req, res, next) {
         && req.body.code != null 
         && req.body.title != null 
         && req.body.title_en != null 
+        && req.body.type != null 
         && req.body.description != null
         && req.body.description_en != null
         && req.body.startDate != null
@@ -44,6 +45,7 @@ router.post('/', function (req, res, next) {
                 code: req.body.code, 
                 title: req.body.title, 
                 title_en: req.body.title_en, 
+                type: req.body.type, 
                 description: req.body.description,
                 description_en: req.body.description_en,
                 startDate: req.body.startDate,
@@ -113,6 +115,7 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
         && req.body.code != null 
         && req.body.title != null 
         && req.body.title_en != null 
+        && req.body.type != null 
         && req.body.description != null
         && req.body.description_en != null
         && req.body.startDate != null
@@ -124,6 +127,7 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
                 code: req.body.code, 
                 title: req.body.title, 
                 title_en: req.body.title_en, 
+                type: req.body.type, 
                 description: req.body.description,
                 description_en: req.body.description_en,
                 startDate: req.body.startDate,
