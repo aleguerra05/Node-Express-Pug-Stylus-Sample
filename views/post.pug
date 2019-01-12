@@ -48,34 +48,37 @@ block content
   if images.length >0
     p Imágenes
     each ima in images
-        
-        
-        //p #{ima.description}
-        //p #{ima.description_en}
-        
+
+      form(action="/images/edit/"+ima.id method="POST")
+        input(type="hidden" name="path" placeholder="" value=ima.path)
+        input(type="hidden" name="id" placeholder="" value=ima.id)
+        input(type="hidden" name="postId" placeholder="" value=post.id)
         p Descripción:
-          textarea(type="text" name="description" placeholder="" rows="1" cols="60" value=ima.description) #{ima.description}
+          textarea(type="text" name="image_description" placeholder="" rows="1" cols="60" value=ima.description) #{ima.description}
         p Descripción Inglés:
-          textarea(type="text" name="description_en" placeholder="" rows="1" cols="60" value=ima.description_en) #{ima.description_en}
-        .img
-          img(src='../'+ima.path)
+          textarea(type="text" name="image_description_en" placeholder="" rows="1" cols="60" value=ima.description_en) #{ima.description_en}
         p
-          form(action="/images/del/"+ima.id method="POST")
-            
-            // values of the image's post belong
-            input(type="hidden" name="postId" placeholder="" value=post.id)
-            input(type="hidden" name="code" placeholder="" value=post.code)
-            input(type="hidden" name="title" placeholder="" value=post.title)
-            input(type="hidden" name="title_en" placeholder="" value=post.title_en)
-            input(type="hidden" name="type" placeholder="" value=post.type)
-            input(type="hidden" name="description" placeholder="" value=post.description)
-            input(type="hidden" name="description_en" placeholder="" value=post.description_en)
-            input(type="hidden" name="startDate" placeholder="" value=post.startDate)
-            input(type="hidden" name="endDate" placeholder="" value=post.endDate)
-            input(type="hidden" name="dateMask" placeholder="" value=post.dateMask)
-            // end of values of the image's post belong
-            
-            input(type="submit" value="Borrar Imágen")
+          input(type="submit" value="Actualizar Descripción")
+
+      .img
+        img(src='../'+ima.path)
+      p
+        form(action="/images/del/"+ima.id method="POST")
+          
+          // values of the image's post belong
+          input(type="hidden" name="postId" placeholder="" value=post.id)
+          input(type="hidden" name="code" placeholder="" value=post.code)
+          input(type="hidden" name="title" placeholder="" value=post.title)
+          input(type="hidden" name="title_en" placeholder="" value=post.title_en)
+          input(type="hidden" name="type" placeholder="" value=post.type)
+          input(type="hidden" name="description" placeholder="" value=post.description)
+          input(type="hidden" name="description_en" placeholder="" value=post.description_en)
+          input(type="hidden" name="startDate" placeholder="" value=post.startDate)
+          input(type="hidden" name="endDate" placeholder="" value=post.endDate)
+          input(type="hidden" name="dateMask" placeholder="" value=post.dateMask)
+          // end of values of the image's post belong
+          
+          input(type="submit" value="Borrar Imágen")
   else
     p No posee Imágenes
   

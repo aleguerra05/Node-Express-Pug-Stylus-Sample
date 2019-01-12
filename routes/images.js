@@ -7,6 +7,7 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 client.registerMethod("createImage", "http://localhost:3001/images/", "POST");
 client.registerMethod("deleteImage", "http://localhost:3001/images/${id}", "DELETE");
+client.registerMethod("editImage", "http://localhost:3001/images/${id}", "PUT");
 client.registerMethod("editPost", "http://localhost:3001/posts/${id}", "PUT");
 
 const upload = multer({
@@ -142,5 +143,32 @@ router.post('/',
         }
     }
 );
+
+router.post('/edit/:imaId(\\d+)', function (req, res, next) {
+    var args = {
+        data: { 
+            id: req.body.id,
+            path:req.body.path, 
+            postId:req.body.postId,
+            description:req.body.image_description,
+            description_en:req.body.image_description_en
+        },
+        path:{
+            id: req.params.imaId  
+          },
+        headers: { "Content-Type": "application/json" }
+    };
+
+    client.methods.editImage(args, function (data, response) {
+        console.log(response.statusCode);
+        if (response.statusCode == 200) {
+            //res.render('post', { title: 'Contenido actualizado satisfactoriamente!', posts: data });
+            res.redirect('back');
+        }
+        else {
+            res.render('message', { title: 'Error', message: 'Error actualizado descripción de la Imagen: ' + response.statusMessage });
+        }
+    });
+});
 
 module.exports = router;

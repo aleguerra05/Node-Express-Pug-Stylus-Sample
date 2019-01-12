@@ -57,9 +57,9 @@
     {
       "id": 1,
       "path": "images/img3.jpg",
-      "postId": 1,
-      "description": "español",
-      "description_en": "ingles"
+      "postId": "1",
+      "description": "español 111",
+      "description_en": "ingles 111"
     },
     {
       "id": 2,
