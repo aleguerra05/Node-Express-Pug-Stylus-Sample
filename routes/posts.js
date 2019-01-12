@@ -163,7 +163,7 @@ router.post('/del/:postId',function (req, res, next) {
         }
         else
         {
-            res.render('message', { title: 'Error', message: 'Error deleting post: ' +args.id + '\n' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Error eliminando Artículo: ' +args.id + '\n' + response.statusMessage });
         }
     });
 });
@@ -172,10 +172,10 @@ router.get('/count', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('message', { title: 'Posts Count ', message: 'PostCount: ' + data.length });
+            res.render('message', { title: 'Cantidad de Artículos', message: 'Cantidad de Artículos: ' + data.length });
         }
         else {
-            res.render('message', { title: 'Error', message: 'Post count: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'Cantidad de Artículos: ' + response.statusMessage });
         }
     });
 });
