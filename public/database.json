@@ -2,15 +2,15 @@
   "posts": [
     {
       "id": 1,
+      "updatedDate": "2019-01-12T19:16:00.565Z",
       "code": "ABC-123",
       "title": "From its medieval origins to the digital era OK!",
       "title_en": "From its medieval origins to the digital era OK!",
       "type": "personalidad",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "[\"doc esp\",\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"]",
+      "description_en": "[\"doc en\",\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"]",
       "startDate": "1999-21-12",
       "endDate": "2019-21-12",
-      "updatedDate": "2019-01-12T17:03:42.986Z",
       "dateMask": "yyyy"
     },
     {
@@ -57,12 +57,16 @@
     {
       "id": 1,
       "path": "images/img3.jpg",
-      "postId": 1
+      "postId": 1,
+      "description": "español",
+      "description_en": "ingles"
     },
     {
       "id": 2,
       "path": "images/img4.jpg",
-      "postId": 1
+      "postId": 1,
+      "description": "español2",
+      "description_en": "ingles2"
     },
     {
       "path": "images/Untitled.png",

@@ -77,7 +77,12 @@ router.post('/',
                 if (err) return handleError(err, res);
 
                 var args = {
-                    data: { path:'images/'+req.file.originalname, postId:req.body.postId},
+                    data: { 
+                        path:'images/'+req.file.originalname, 
+                        postId:req.body.postId,
+                        description:req.body.image_description,
+                        description_en:req.body.image_description_en
+                    },
                     headers: { "Content-Type": "application/json" }
                 };
 
@@ -120,7 +125,7 @@ router.post('/',
                                         res.redirect('back');
                                     }
                                 });
-                                
+
                             }
                             else {
                                 res.render('message', { title: 'Error', message: 'Error: ' + response.statusMessage });
