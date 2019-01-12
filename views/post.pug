@@ -8,8 +8,8 @@ block content
 
   form(action="/posts/edit/"+post.id method="POST")
     input(type="hidden" name="id" placeholder="" value=post.id)
-    p Codigo:
-      input(type="text" name="code" placeholder="" value=post.code)
+    p Código:
+      textarea(type="text" name="code" placeholder="" rows="1" cols="60" value=post.code) #{post.code}
     p Título:
       textarea(name="title" placeholder="" rows="1" cols="60" value=post.title) #{post.title}
     p Título Inglés:
@@ -19,11 +19,11 @@ block content
     p Descripción Inglés:
       textarea(name="description_en" placeholder="" value=post.description_en rows="6" cols="60") #{post.description_en}
     p Máscara de Fecha:
-      input(type="text" name="dateMask" placeholder="" value=post.dateMask)
+      textarea(type="text" name="dateMask" placeholder="" rows="1" cols="60" value=post.dateMask) #{post.dateMask}
     p Fecha Inicio:
-      input(type="text" name="startDate" placeholder="" value=post.startDate)
+      textarea(type="text" name="startDate" placeholder="" rows="1" cols="60" value=post.startDate) #{post.startDate}
     p Fecha Fin:
-      input(type="text" name="endDate" placeholder="" value=post.endDate)
+      textarea(type="text" name="endDate" placeholder="" rows="1" cols="60" value=post.endDate) #{post.endDate}
     input(type="submit" value="Actualizar")
 
   if images.length >0
