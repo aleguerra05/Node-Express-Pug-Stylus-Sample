@@ -2,15 +2,9 @@ extends layout
 
 block content
   p
-      a(href='../') Lista de Artículos
+    a(href='../') Lista de Artículos
 
   h1 Nuevo Artículo:
-  
-  //ul
-  //each val in posts
-  //  p
-  //  a(href='/posts/' + val.id) Artículo #{val.id}
-  //p
 
   h1= "Adicionar un Artículo"
   form(action="/posts" method="POST")

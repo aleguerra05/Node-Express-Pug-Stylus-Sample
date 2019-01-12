@@ -5,7 +5,8 @@ block content
     a(href='/') Lista de Artículos
   p
     a(href='./') Insertar Nuevo Artículo
-  p
+  
+  //p
     a(href='/posts/' + (post.id + 1)) Siguiente Artículo
 
   form(action="/posts/edit/"+post.id method="POST")

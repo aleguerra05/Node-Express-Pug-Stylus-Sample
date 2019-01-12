@@ -12,17 +12,6 @@
       "dateMask": "yyyy"
     },
     {
-      "code": "ABC-345",
-      "title": "this is another title",
-      "title_en": "this is another title",
-      "description": "and this is the description of another post",
-      "description_en": "and this is the description of another post",
-      "startDate": "1986-09-13",
-      "endDate": "1999-05-15",
-      "dateMask": "dd/mm/yyyy",
-      "id": 2
-    },
-    {
       "code": "ZXC-987",
       "title": "Third title post",
       "title_en": "Third title post",
@@ -51,11 +40,6 @@
       "id": 2,
       "path": "images/img4.jpg",
       "postId": 1
-    },
-    {
-      "path": "images/Document.png",
-      "postId": "2",
-      "id": 3
     },
     {
       "path": "images/Untitled.png",
