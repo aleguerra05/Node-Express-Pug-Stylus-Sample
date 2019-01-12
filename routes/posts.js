@@ -9,7 +9,6 @@ client.registerMethod("getPosts", "http://localhost:3001/posts/${id}", "GET");
 client.registerMethod("deletePost", "http://localhost:3001/posts/${id}", "DELETE");
 client.registerMethod("editPost", "http://localhost:3001/posts/${id}", "PUT");
 client.registerMethod("createPosts", "http://localhost:3001/posts/", "POST");
-client.registerMethod("getComments", "http://localhost:3001/posts/${id}/comments", "GET");
 client.registerMethod("getImages", "http://localhost:3001/posts/${id}/images", "GET");
 //client.registerMethod("getAllPosts", "http://localhost:3001/posts/", "GET");
 
@@ -90,17 +89,13 @@ router.get('/:postId(\\d+)', function (req, res, next) {
 
             var args = { path: { "id": req.params.postId } };
 
-            client.methods.getComments(args, function (comments, commentsResponse) {
-                console.log(comments);
-                console.log(commentsResponse.statusCode);
+            client.methods.getImages(args, function (images, imagesResponse) {
+                console.log(images);
+                console.log(imagesResponse.statusCode);
 
-                client.methods.getImages(args, function (images, imagesResponse) {
-                    console.log(images);
-                    console.log(imagesResponse.statusCode);
-
-                    res.render('post', { title: 'Artículo ' + req.params.postId, post: data, comments: comments, images: images });
-                });
+                res.render('post', { title: 'Artículo ' + req.params.postId, post: data, images: images });
             });
+            
         }
         else {
             res.render('message', { title: 'Error', message: 'Artículo ' + req.params.postId + ' detalles: ' + response.statusMessage });
