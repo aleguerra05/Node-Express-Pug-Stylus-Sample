@@ -159,7 +159,7 @@ router.post('/del/:postId',function (req, res, next) {
         
     client.methods.deletePost(args, function (data, response) {
         if (response.statusCode == 200) {
-            res.render('message', { title: 'Post Deleted', message: 'Post ' + req.params.postId + ' deleted!' });
+            res.render('message', { title: 'Artículo Eliminado', message: 'Artículo ' + req.params.postId + ' eliminado!' });
         }
         else
         {
