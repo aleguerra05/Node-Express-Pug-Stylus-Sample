@@ -41,11 +41,11 @@
     },
     {
       "id": 4,
-      "updatedDate": "2019-01-12T18:35:29.931Z",
+      "updatedDate": "2019-01-12T18:37:56.423Z",
       "code": "324",
       "title": "234",
       "title_en": "234",
-      "type": "hecho",
+      "type": "personalidad",
       "description": "234",
       "description_en": "324",
       "startDate": "234",
@@ -73,6 +73,11 @@
       "path": "images/Untitled.png",
       "postId": "2",
       "id": 5
+    },
+    {
+      "path": "images/Document.png",
+      "postId": "4",
+      "id": 6
     }
   ]
 }
