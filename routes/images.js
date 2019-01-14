@@ -81,8 +81,8 @@ router.post('/',
                     data: { 
                         path:'images/'+req.file.originalname, 
                         postId:req.body.postId,
-                        description:req.body.image_description,
-                        description_en:req.body.image_description_en
+                        footNote:req.body.footNote,
+                        footNote_en:req.body.footNote_en
                     },
                     headers: { "Content-Type": "application/json" }
                 };
@@ -150,8 +150,8 @@ router.post('/edit/:imaId(\\d+)', function (req, res, next) {
             id: req.body.id,
             path:req.body.path, 
             postId:req.body.postId,
-            description:req.body.image_description,
-            description_en:req.body.image_description_en
+            footNote:req.body.footNote,
+            footNote_en:req.body.footNote_en
         },
         path:{
             id: req.params.imaId  

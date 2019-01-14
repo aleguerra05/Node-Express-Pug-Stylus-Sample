@@ -55,9 +55,9 @@ block content
         input(type="hidden" name="postId" placeholder="" value=post.id)
         
         p Descripción:
-          textarea(type="text" name="image_description" placeholder="" rows="1" cols="60" value=ima.description) #{ima.description}
+          textarea(type="text" name="footNote" placeholder="" rows="1" cols="60" value=ima.footNote) #{ima.footNote}
         p Descripción Inglés:
-          textarea(type="text" name="image_description_en" placeholder="" rows="1" cols="60" value=ima.description_en) #{ima.description_en}
+          textarea(type="text" name="footNote_en" placeholder="" rows="1" cols="60" value=ima.footNote_en) #{ima.footNote_en}
         
         // values of the image's post belong
         input(type="hidden" name="code" placeholder="" value=post.code)
@@ -105,9 +105,9 @@ block content
     
     
     p Descripción:
-      textarea(type="text" name="image_description" placeholder="" rows="1" cols="60")
+      textarea(type="text" name="footNote" placeholder="" rows="1" cols="60")
     p Descripción Inglés:
-      textarea(type="text" name="image_description_en" placeholder="" rows="1" cols="60")
+      textarea(type="text" name="footNote_en" placeholder="" rows="1" cols="60")
 
     // values of the image's post belong
     input(type="hidden" name="code" placeholder="" value=post.code)

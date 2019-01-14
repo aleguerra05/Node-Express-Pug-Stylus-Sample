@@ -33,8 +33,8 @@
       "title": "123",
       "title_en": "123",
       "type": "obra",
-      "description": "123",
-      "description_en": "1321",
+      "footNote": "123",
+      "footNote_en": "1321",
       "startDate": "123",
       "endDate": "123",
       "dateMask": "123"
@@ -46,8 +46,8 @@
       "title": "234",
       "title_en": "234",
       "type": "personalidad",
-      "description": "234",
-      "description_en": "324",
+      "footNote": "234",
+      "footNote_en": "324",
       "startDate": "234",
       "endDate": "234",
       "dateMask": "324"
@@ -58,36 +58,36 @@
       "id": 1,
       "path": "images/img3.jpg",
       "postId": "1",
-      "description": "español 1234",
-      "description_en": "ingles 1234"
+      "footNote": "español 1234",
+      "footNote_en": "ingles 1234"
     },
     {
       "id": 2,
       "path": "images/img4.jpg",
       "postId": 1,
-      "description": "español2",
-      "description_en": "ingles2"
+      "footNote": "español2",
+      "footNote_en": "ingles2"
     },
     {
       "id": 4,
       "path": "images/Untitled.png",
       "postId": "3",
-      "description": "captura2",
-      "description_en": "snapshot2"
+      "footNote": "captura2",
+      "footNote_en": "snapshot2"
     },
     {
       "id": 5,
       "path": "images/Untitled.png",
       "postId": "2",
-      "description": "captura",
-      "description_en": "snapshot"
+      "footNote": "captura",
+      "footNote_en": "snapshot"
     },
     {
       "id": 6,
       "path": "images/Document.png",
       "postId": "4",
-      "description": "docu es",
-      "description_en": "document en"
+      "footNote": "docu es",
+      "footNote_en": "document en"
     }
   ]
 }
