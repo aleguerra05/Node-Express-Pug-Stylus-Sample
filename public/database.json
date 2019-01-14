@@ -2,92 +2,2749 @@
   "posts": [
     {
       "id": 1,
-      "updatedDate": "2019-01-12T20:05:20.206Z",
-      "code": "ABC-123",
-      "title": "From its medieval origins to the digital era OK!",
-      "title_en": "From its medieval origins to the digital era OK!",
-      "type": "personalidad",
-      "description": "[\"doc esp\",\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"]",
-      "description_en": "[\"doc en\",\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"]",
-      "startDate": "1999-21-12",
-      "endDate": "2019-21-12",
+      "code": "CUB001",
+      "type": "hecho",
+      "title": "Aborígenes",
+      "title_en": "From bla_en its medieval origins to the digital era OK! en",
+      "description": "En la lengua, la toponimia y algunas costumbres prevalece la herencia cultural de nuestros aborígenes. Hamaca, Habana, huracán y Guanabacoa son algunos de los vocablos heredados de nuestros aborígenes.",
+      "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "updatedDate": "2019-01-05 09:09:00",
+      "startDate": "1400-1-1",
+      "endDate": "1492-1-1",
       "dateMask": "yyyy"
     },
     {
       "id": 2,
-      "updatedDate": "2019-01-12T20:07:24.200Z",
-      "code": "ZXC-987",
-      "title": "Third title post",
-      "title_en": "Third title post",
+      "code": "CUB002",
       "type": "hecho",
-      "description": "description",
-      "description_en": "description",
-      "startDate": "1986-09-13",
-      "endDate": "1999-05-15",
-      "dateMask": "yyyy"
+      "title": "Cristóbal Colón arriba a Guanahani, en las Bahamas",
+      "title_en": "this is another title",
+      "description": "La expedición liderada por el almirante Cristóbal Colón, encuentra las islas del Caribe, antesala del continente americano. Colón toca tierra cubana el 27 de octubre de 1492.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-08 18:36:00",
+      "startDate": "1492-10-12",
+      "endDate": "",
+      "dateMask": "dd/MM/yyyy"
     },
     {
       "id": 3,
-      "updatedDate": "2019-01-12T20:07:43.863Z",
-      "code": "123",
-      "title": "123",
-      "title_en": "123",
-      "type": "obra",
-      "footNote": "123",
-      "footNote_en": "1321",
-      "startDate": "123",
-      "endDate": "123",
-      "dateMask": "123"
+      "code": "CUB003",
+      "type": "hecho",
+      "title": "Hallazgo de la imagen de la Virgen de la Caridad del Cobre, patrona de Cuba, en la Bahía de Nipe",
+      "title_en": "this is another title",
+      "description": "Nuestra Señora de la Caridad del Cobre, cuya imagen fue hallada en la bahía de Nipe, en 1612, es la Patrona de Cuba. Por el sincretismo de nuestra religiosidad popular es también Oshún, Cachita, la Virgencita, o la Virgen Mambisa.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-04 09:09:00",
+      "startDate": "1612-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
     },
     {
       "id": 4,
-      "updatedDate": "2019-01-12T20:08:04.694Z",
-      "code": "324",
-      "title": "234",
-      "title_en": "234",
+      "code": "CUB004",
+      "type": "hecho",
+      "title": "Ferrocarril",
+      "title_en": "Train1",
+      "description": "En 1837 llega el ferrocarril a la Isla, primer país en América Latina en recibirlo, incluso antes que la metrópolis española. Contribuyó a la prosperidad económica y al nacimiento y desarrollo  de nuevas poblaciones.",
+      "description_en": "description",
+      "updatedDate": "2019-01-12 10:01:00",
+      "startDate": "1763-01-01",
+      "endDate": "1846-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 5,
+      "code": "CUB006",
+      "type": "hecho",
+      "title": "Creación de la Bandera cubana por el patriota cubano Miguel Teurbe Tolón",
+      "title_en": "Third title post",
+      "description": "El 19 de mayo de 1850 la tropa de una expedición organizada por Narciso López, al desembarcar en Cárdenas y tras un breve combate, ondeó por primera vez en tierra cubana nuestra enseña nacional.",
+      "description_en": "description",
+      "updatedDate": "2019-01-11 12:00:00",
+      "startDate": "1849-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 6,
+      "code": "CUB007",
+      "type": "hecho",
+      "title": "Inicio de la Guerra de Independencia de los Diez Años",
+      "title_en": "this is another title",
+      "description": "El inicio de las guerras de independencia de Cuba ocurrió el 10 de octubre de 1868 cando Carlos Manuel de Céspedes reunió en su ingenio Damajagua a más de 500 hombres y le dio lectura al Manifiesto de la Junta Revolucionaria de la Isla de Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1868-01-01",
+      "endDate": "1878-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 7,
+      "code": "CUB008",
+      "type": "hecho",
+      "title": "Explosión del Maine",
+      "title_en": "this is another title",
+      "description": "La explosión del acorazado Maine, el 15 de febrero de 1898, fue el pretexto perfecto para la intervención norteamericana en la guerra por la independencia de Cuba de la metrópolis española.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1898-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 8,
+      "code": "CUB009",
+      "type": "hecho",
+      "title": "Establecimiento oficial de la República de Cuba. Se iza la bandera en Capitanes Generales",
+      "title_en": "this is another title",
+      "description": "El 20 de mayo de 1902, en el antiguo Palacio de los Capitanes Generales, se iza la bandera de la estrella solitaria como símbolo del nacimiento de la República de Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-08 12:00:00",
+      "startDate": "1902-05-20",
+      "endDate": "",
+      "dateMask": "dd/MM/yyyy"
+    },
+    {
+      "id": 9,
+      "code": "CUB010",
+      "type": "hecho",
+      "title": "Emigración de españoles hacia Cuba",
+      "title_en": "this is another title",
+      "description": "Este masivo flujo migratorio aportó un crecimiento vigoroso a la nación antillana, no solo en el orden demográfico, sino también en los aspectos sociales, económicos, políticos, culturales y religiosos. En Cuba se asociaron por regiones: Sociedad Castellana de Beneficencia, Sociedad de Beneficencia de Naturales de Galicia y Centro Asturiano de La Habana",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1902-01-01",
+      "endDate": "1930-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 10,
+      "code": "CUB011",
+      "type": "hecho",
+      "title": "Asalto a los Cuarteles Moncada, en Santiago de Cuba, y Carlos Manuel de Céspedes, en Bayamo",
+      "title_en": "this is another title",
+      "description": "Liderados por Fidel Castro, un grupo de jóvenes cubanos, que más tarde se conocerían como la Generación del Centenario, dieron comienzo al asalto a los Cuarteles Moncada, en Santiago de Cuba, y Carlos Manuel de Céspedes, en Bayamo, contra la dictadura de Fulgencio Batista. El Moncada significó el comienzo de las acciones por la independencia que más tarde se alcanzaría con la victoria el 1ro de enero de 1959.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1953-07-26",
+      "endDate": "",
+      "dateMask": "dd/MM/yyyy"
+    },
+    {
+      "id": 11,
+      "code": "CUB012",
+      "type": "hecho",
+      "title": "Campaña de Alfabetización",
+      "title_en": "this is another title",
+      "description": "El 22 de diciembre 1961, Fidel Castro proclamó en la Plaza de la Revolución  a Cuba “el primer territorio libre de analfabetismo en América Latina”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-012 12:00:00",
+      "startDate": "1961-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 12,
+      "code": "CUB013",
+      "type": "hecho",
+      "title": "Victoria de Playa Girón",
+      "title_en": "this is another title",
+      "description": "En la madrugada del 17 de abril de 1961 un grupo entrenado, pertrechado y financiado por la Agencia Central de Inteligencia (CIA), desembarcó por Playa Girón y Playa Larga. Los revolucionarios cubanos, dirigidos por Fidel, contraatacaron a los mercenarios, convirtiéndose la invasión a Playa Girón en la primera gran derrota del imperialismo en América Latina.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1961-04-19",
+      "endDate": "",
+      "dateMask": "dd/MM/yyyy"
+    },
+    {
+      "id": 13,
+      "code": "CUB091",
+      "type": "obra",
+      "title": "Espejo de paciencia, Silvestre de Balboa",
+      "title_en": "this is another title",
+      "description": "“Espejo de paciencia” es considerado el primer texto literario de las letras cubanas. Su autor, Silvestre de Balboa, nació en Las Palmas de Gran Canaria en 1563, y fue un reconocido escribano público del cabildo de la villa de Puerto Príncipe. El poema épico está basado en sucesos reales ocurridos en Yara, Manzanillo, en 1604. Su autor cuenta el arribo a las costas de Manzanillo de una nave pirata al mando del capitán francés Gilberto Girón; el secuestro del obispo Fray Juan de las Cabezas Altamirano y su rescate por los vecinos de la isla.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-012 12:00:00",
+      "startDate": "1608-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 14,
+      "code": "CUB020",
+      "type": "obra",
+      "title": "La Giraldilla",
+      "title_en": "this is another title",
+      "description": "Veleta devenida símbolo de la ciudad. Fundida en bronce en 1629 por Gerónimo Martín Pinzón, se inspira en la leyenda de Hernando de Soto e Isabel de Bobadilla.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1629-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 15,
+      "code": "CUB019",
+      "type": "obra",
+      "title": "La toma de La Habana por los ingleses, Dominic Serres",
+      "title_en": "this is another title",
+      "description": "Durante once meses, en 1762, La Habana fue ocupada por la armada británica. Este grabado, de la serie La Captura de La Habana, fue realizado por Dominic Serres en 1762, a partir de los dibujos hechos in situ por el teniente Philip Orsbridge. Pertenece al Archivo Histórico de la Oficina del Historiador de la Ciudad de La Habana.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1762-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 16,
+      "code": "CUB014",
+      "type": "obra",
+      "title": "La primera misa bajo la ceiba memorable, Jean Baptiste Vermay",
+      "title_en": "this is another title",
+      "description": "Obra del artista plástico francés Jean Baptiste Vermay realizada en 1826 por el encargo del Obispo Espada para las obras destinadas a conmemorar el acto fundacional de la villa de San Cristóbal de La Habana. Esta pintura neoclásica representa la primera misa y cabildo al pie de una ceiba, ubicada en el mismo lugar donde hoy se erige el conjunto arquitectónico El Templete.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1826-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 17,
+      "code": "CUB018",
+      "type": "obra",
+      "title": "Revista “Bohemia”",
+      "title_en": "this is another title",
+      "description": "Fundada por Miguel Ángel Quevedo Pérez, el 10 de mayo de 1908, durante el convulso periodo de la segunda intervención militar estadounidense. Es la más antigua y una de las más importantes revistas cubanas. En sus inicios, seguía los cánones de la prensa europea, pero con el paso del tiempo se convierte en un magazine atento a los más importantes sucesos de actualidad. Fue la primera publicación cubana en utilizar portadas en tricromías. Hoy en día sus tiradas se publican cada dos semanas y recogen diversos temas de interés como la moda, el deporte, el arte y la historia.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1908-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 18,
+      "code": "CUB017",
+      "type": "obra",
+      "title": "Revista “Social”",
+      "title_en": "this is another title",
+      "description": "Revista mensual ilustrada que circuló en Cuba entre 1916 y 1938. Fue fundada por el ilustrador gráfico y caricaturista Conrado Walter Massaguer y tuvo como propósito reflejar la vida del sector social con mejor posición económica en La Habana. Era una publicación de vanguardia que trascendió en la historia del periodismo cubano por su calidad y alto valor estético.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1916-01-01",
+      "endDate": "1938-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 19,
+      "code": "CUB015",
+      "type": "obra",
+      "title": "La jungla, Wilfredo Lam",
+      "title_en": "this is another title",
+      "description": "Wifredo Lam es uno de los principales artistas visuales de las vanguardias plásticas cubanas. Esta obra condensa la esencia cultural caribeña, determinada por el continuo proceso de transculturación. Según su propio autor, “La jungla” está destinada a “comunicar un estado psíquico”, representado por un grupo de figuras de acento africano, insertas en la naturaleza tropical de los campos del Caribe.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1943-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 20,
+      "code": "CUB016",
+      "type": "obra",
+      "title": "Milicias campesinas, Servando Cabrera Moreno",
+      "title_en": "this is another title",
+      "description": "Imbuido por la vorágine del triunfo revolucionario cubano, esta obra se inserta en la serie de pintura épica desarrollada por el artista durante los primeros años de la década del 60 de la pasada centuria. “Milicias campesinas” plasma la tradición de lucha que viene desde los mambises al tratarse de representaciones masculinas ecuestres y con machete en mano, en posición de combate.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1961-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 21,
+      "code": "CUB021",
       "type": "personalidad",
-      "footNote": "234",
-      "footNote_en": "324",
-      "startDate": "234",
-      "endDate": "234",
-      "dateMask": "324"
+      "title": "Francisco de Arango y Parreño",
+      "title_en": "this is another title",
+      "description": "Figura destacada del pensamiento político y el desarrollo económico de la Isla a principios del siglo XIX. Fue miembro de la Sociedad Patriótica de La Habana. Todo su empeño se destinó a mejorar la situación del país con la mayor libertad de comercio, que permitiría el incremento de la producción azucarera y el mejoramiento de la situación de los hacendados cubanos.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1765-01-01",
+      "endDate": "1837-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 22,
+      "code": "CUB022",
+      "type": "personalidad",
+      "title": "Tomás Romay y Chacón",
+      "title_en": "this is another title",
+      "description": "Distinguido médico cubano que introdujo una visión científica de los problemas médicos e impulsó la modernización de la Medicina clínica, en la Universidad de La Habana. Su labor más meritoria fue haber introducido y propagado la vacuna en Cuba a partir de febrero de 1804. Se le considera el iniciador del Movimiento Científico en Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1764-01-01",
+      "endDate": "1849-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 23,
+      "code": "CUB023",
+      "type": "personalidad",
+      "title": "José de la Luz y Caballero",
+      "title_en": "this is another title",
+      "description": "Importante pensador, ensayista y profesor del siglo XIX. Fue el fundador del Colegio del Salvador, donde se formaron numerosos intelectuales cubanos. Conoció personalmente a Goethe y difundió en Cuba la literatura y el pensamiento alemanes.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1800-01-01",
+      "endDate": "1862-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 24,
+      "code": "CUB024",
+      "type": "personalidad",
+      "title": "Félix Varela y Morales",
+      "title_en": "this is another title",
+      "description": "El padre Varela es considerado uno de los forjadores de la nación cubana y el primero que enseñó a los cubanos a pensar en el patriotismo. Fue un sacerdote, maestro, escritor, filósofo y político cubano que tuvo un importante desempeño en la vida intelectual, política y religiosa en la Cuba de la primera mitad del siglo XIX.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1788-01-01",
+      "endDate": "1853-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 25,
+      "code": "CUB025",
+      "type": "personalidad",
+      "title": "José Antonio Saco",
+      "title_en": "this is another title",
+      "description": "Sociólogo, periodista, historiador y economista. Se destacó por su postura opuesta a la esclavitud y contra la anexión de Cuba a los Estados Unidos. A él se debió el que por primera vez se adjudicara el calificativo de 'cubana' a una institución en nuestro país, al proponer que se le diera el nombre de Sección de Literatura Cubana, a la que este fundara en la Sociedad Económica de Amigos del País.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1797-01-01",
+      "endDate": "1879-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 26,
+      "code": "CUB026",
+      "type": "personalidad",
+      "title": "José María Heredia y Heredia",
+      "title_en": "this is another title",
+      "description": "Fue un poeta, periodista, dramaturgo y abogado cubano, considerado el primer poeta romántico de América. Entre sus poemas se destaca “Oda al Niágara”. Pasó muchos años en el exilio, lo cual impregnó de nostalgia en sus poemas.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1803-01-01",
+      "endDate": "1839-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 27,
+      "code": "CUB027",
+      "type": "personalidad",
+      "title": "Cirilo Villaverde",
+      "title_en": "this is another title",
+      "description": "Periodista, novelista, maestro, traductor y escritor cubano. Es el autor de la clásica novela “Cecilia Valdés” o “La Loma del ángel”, considerada la obra cumbre de las letras cubanas del siglo XIX.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1812-01-01",
+      "endDate": "1824-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 28,
+      "code": "CUB028",
+      "type": "personalidad",
+      "title": "Gertrudis Gómez de Avellaneda",
+      "title_en": "this is another title",
+      "description": "Reconocida escritora de la época colonial, cuya poesía gira en torno al amor desdichado y pesimista. En el teatro pretendió fundir la tragedia clásica con el drama romántico.  Sus escritos, llenos de pasión y provocación, cuestionan la subordinación de la mujer por lo que pueden ser considerados precursores del feminismo contemporáneo.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1814-01-01",
+      "endDate": "1873-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 29,
+      "code": "CUB029",
+      "type": "personalidad",
+      "title": "Juan Cristóbal Nápoles Fajardo",
+      "title_en": "this is another title",
+      "description": "Conocido como El Cucalambé, es la figura más prominente de la espinela del siglo XIX en Cuba. Se dedicó a la poesía popular y al cuento costumbrista. En Las Tunas, su pueblo natal, se desarrolla la Jornada Cucalambeana, acontecimiento en el que intervienen poetas, músicos, improvisadores, repentistas, investigadores y la población en general.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1829-01-01",
+      "endDate": "1862-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 30,
+      "code": "CUB030",
+      "type": "personalidad",
+      "title": "Ignacio Cervantes",
+      "title_en": "this is another title",
+      "description": "Fue un reconocido músico  cubano, virtuoso del piano y compositor del siglo XIX. Su obra musical se identifica con el sentimiento nacionalista. Algunas de sus obras más destacadas son “Adiós a Cuba”, “No bailes más”, “Los delirios de Rosita” y “Tres danzas cubanas”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1847-01-01",
+      "endDate": "1905-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 31,
+      "code": "CUB031",
+      "type": "personalidad",
+      "title": "Felipe Poey y Aloy",
+      "title_en": "this is another title",
+      "description": "Por más de cincuenta años se dedicó al estudio de la mineralogía, la geografía, la historia natural y, sobre todo, al ordenamiento y clasificación de los peces marinos y de agua dulce de nuestro archipiélago. Su obra cumbre es “Ictiología cubana”, presentada en la Exposición Internacional Colonial y de Exportación General de Ámsterdam.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1799-01-01",
+      "endDate": "1891-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 32,
+      "code": "CUB032",
+      "type": "personalidad",
+      "title": "Carlos J. Finlay",
+      "title_en": "this is another title",
+      "description": "Descubridor del agente transmisor de la fiebre amarilla. Llevó a cabo importantes estudios sobre la propagación del cólera en la capital cubana, y descubrió que la infección se extendía debido a la contaminación de la Zanja Real de la cuidad. El 3 de diciembre, aniversario del nacimiento de Finlay, se celebra el Día de la Medicina Americana.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1833-01-01",
+      "endDate": "1915-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 33,
+      "code": "CUB033",
+      "type": "personalidad",
+      "title": "Juan Gualberto Gómez",
+      "title_en": "this is another title",
+      "description": "Fue un político, periodista y líder de los afroamericanos cubanos, que se destacó en la lucha por la independencia de Cuba y durante la etapa republicana comprendida entre 1901 y 1933. Realizó una gran campaña en defensa de la raza negra.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1854-01-01",
+      "endDate": "1933-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 34,
+      "code": "CUB035",
+      "type": "personalidad",
+      "title": "Bonifacio Byrne",
+      "title_en": "this is another title",
+      "description": "Muchos lo consideran “El poeta de la guerra por antonomasia”. Su poesía más conocida, Mi bandera, fue compuesta por el autor al regresar a Cuba después de terminada la Guerra Hispano-Americana, y en ella expresa su angustia frente a la incertidumbre del futuro nacional. “Al volver de distante ribera, con el alma enlutada y sombría, afanoso busqué mi bandera ¡y otra he visto además de la mía!”",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1861-01-01",
+      "endDate": "1936-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 35,
+      "code": "CUB038",
+      "type": "personalidad",
+      "title": "Carlos Manuel de Céspedes",
+      "title_en": "this is another title",
+      "description": "Abogado culto e impetuoso, que lideró el inicio de nuestras guerras de independencia. Por su patriotismo, arrojo y nacionalismo, Céspedes es considerado el Padre de la Patria.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1819-01-01",
+      "endDate": "1874-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 36,
+      "code": "CUB042",
+      "type": "personalidad",
+      "title": "Ignacio Agramonte Loynaz",
+      "title_en": "this is another title",
+      "description": "Conocido como El Mayor, Agramonte  fue uno de los líderes más sobresalientes de la guerra de independencia de Cuba. El 8 de octubre de 1871 protagonizó el rescate del brigadier Julio Sanguily. En 1868 contrajo matrimonio con Amalia Simoni Argilagos, quien se convertiría en su ángel idolatrado a  quien le escribió hermosas cartas de amor durante sus batallas.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1841-01-01",
+      "endDate": "1873-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 37,
+      "code": "CUB057",
+      "type": "personalidad",
+      "title": "Ignacio Villa, Bola de Nieve",
+      "title_en": "this is another title",
+      "description": "Cantante, compositor y pianista cubano de gran fama internacional por su virtud de combinar la música clásica con la música popular cubana. La gran artista cubana Rita Montaner se convirtió en su principal admiradora. A ella se le atribuye su apodo de Bola de Nieve.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1911-01-01",
+      "endDate": "1971-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 38,
+      "code": "CUB058",
+      "type": "personalidad",
+      "title": "Fernando Ortiz",
+      "title_en": "this is another title",
+      "description": "Antropólogo, jurista y periodista cubano, precursor de los estudios sobre la cultura de origen africano en Cuba.  Su obra fundacional, “Contrapunteo cubano del tabaco y el azúcar”, publicada en 1949, introduce el concepto de transculturación, considerado su mayor aporte a la antropología cultural.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1881-01-01",
+      "endDate": "1969-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 39,
+      "code": "CUB060",
+      "type": "personalidad",
+      "title": "Ernesto Lecuona",
+      "title_en": "this is another title",
+      "description": "Talentoso y prestigioso pianista y compositor cubano reconocido internacionalmente. Piezas suyas son “La comparsa”, “Siboney” y “La Malagueña”. Sus composiciones se distinguen por la inclusión de rasgos típicos de la tradición popular de España, de Cuba y de los toques del tambor en el carnaval.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1895-01-01",
+      "endDate": "1963-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 40,
+      "code": "CUB061",
+      "type": "personalidad",
+      "title": "Amelia Peláez",
+      "title_en": "this is another title",
+      "description": "Reconocida pintora, ceramista y muralista cubana. Una de las primeras artistas mujeres que contó con el reconocimiento de sus contemporáneos.  Estudió en la Academia de Bellas Artes de San Alejandro y fue discípula del maestro Leopoldo Romañach. Sus naturalezas muertas incorporan elementos de la arquitectura vernácula, con fuerte presencia de la línea negra y gruesa como amalgama entre las formas y los colores tropicales. Entre sus murales se destaca “Las frutas cubanas”, situado en la fachada del hotel Habana Libre.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-12 12:00:00",
+      "startDate": "1896-01-01",
+      "endDate": "1968-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 41,
+      "code": "CUB062",
+      "type": "personalidad",
+      "title": "Alejandro García Caturla",
+      "title_en": "this is another title",
+      "description": "Músico y compositor cubano que se destacó por su talento y por incorporar a la música clásica ritmos propios de etnias africanas. Entre sus influencias se cuentan las populares fiestas de Remedios, carnavales antiquísimos que representan el legado africano en Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1906-01-01",
+      "endDate": "1940-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 42,
+      "code": "CUB064",
+      "type": "personalidad",
+      "title": "Rita Montaner",
+      "title_en": "this is another title",
+      "description": "Conocida como La Única o la Rita de Cuba, fue una de las más grandes artistas cubanas. Incursionó en el teatro, la radio, el cine y la televisión, y alcanzó notable éxito nacional e internacional.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1900-01-01",
+      "endDate": "1958-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 43,
+      "code": "CUB080",
+      "type": "personalidad",
+      "title": "Tomas Gutiérrez Alea",
+      "title_en": "this is another title",
+      "description": "Director y guionista de cine cubano. Su trabajo se inserta en el llamado Movimiento del Nuevo Cine Latinoamericano. Fue fundador del Instituto Cubano del Arte e Industria Cinematográficos (ICAIC) y de la Unión de Escritores y Artistas de Cuba (UNEAC). Entre sus obras más reconocidas están “Memorias del subdesarrollo” (1968), “Las doce sillas” (1962), “La muerte de un burócrata” (1966), entre otras.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1928-01-01",
+      "endDate": "1996-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 44,
+      "code": "CUB082",
+      "type": "personalidad",
+      "title": "José Lezama Lima",
+      "title_en": "this is another title",
+      "description": "Poeta, ensayista y novelista cubano considerado una de las más grandes figuras de la literatura hispanoamericana. Formó parte del “boom” literario de los años 60 por su singular neobarroquismo, su lirismo, el uso de metáforas, alusiones y alegorías. Su obra más importante de las letras hispanoamericanas fue la novela “Paradiso” (1966).",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1910-01-01",
+      "endDate": "1976-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 45,
+      "code": "CUB083",
+      "type": "personalidad",
+      "title": "Alicia Alonso",
+      "title_en": "this is another title",
+      "description": "Bailarina, coreógrafa, Prima Ballerina Assoluta y directora del Ballet Nacional de Cuba, constituye la figura cimera del ballet clásico en Iberoamérica, famosa internacionalmente por sus representaciones de “Giselle” y “Carmen”, así como otras grandes obras del repertorio clásico y romántico. En 1948 fundó en La Habana el Ballet Alicia Alonso, hoy Ballet Nacional de Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1920-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 46,
+      "code": "CUB084",
+      "type": "personalidad",
+      "title": "Rosita Fornés",
+      "title_en": "this is another title",
+      "description": "Actriz y cantante cubana convertida en una de las figuras artísticas más relevantes del teatro, el cine, la radio, el cabaret y la televisión desde los años 40. Ha incursionado en una variedad de formatos musicales y danzarios entre los que cuentan la Opereta, la Zarzuela, la comedia ligera, el canto lírico, el drama clásico y la revista musical.  En 1952 es declarada por la prensa mexicana como Mejor Vedette de América.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1923-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 47,
+      "code": "CUB085",
+      "type": "personalidad",
+      "title": "María de los Ángeles Santana",
+      "title_en": "this is another title",
+      "description": "Vedette cubana de talla internacional cuya versatilidad y carisma, dominio de la escena, el gesto y la dicción, la hicieron grande en el contexto artístico cubano y extranjero. Es conocida en Cuba por haber sido la  primera mujer en el país en manejar una motocicleta, en 1938.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1914-01-01",
+      "endDate": "2011-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 48,
+      "code": "CUB086",
+      "type": "personalidad",
+      "title": "Carilda Oliver Labra",
+      "title_en": "this is another title",
+      "description": "Poetisa cubana de talla internacional, autora del poema “Me desordeno, amor, me desordeno”. Por su fidelidad a su ciudad natal, Matanzas, en 1950 fue declarada Hija Eminente de la Atenas de Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1922-01-01",
+      "endDate": "2018-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 49,
+      "code": "CUB088",
+      "type": "personalidad",
+      "title": "Pablo de la Torriente Brau",
+      "title_en": "this is another title",
+      "description": "Más de mil cubanos engrosaron las filas de las llamadas Brigadas Internacionales, que fueron a pelear por la República. Entre ellos se cuenta al intelectual y periodista Pablo de la Torriente Brau, quien fungía como corresponsal de guerra y quien murió en Mahadahonda víctima de un disparo.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1901-01-01",
+      "endDate": "1936-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 50,
+      "code": "CUB089",
+      "type": "personalidad",
+      "title": "Mirta Aguirre Carreras",
+      "title_en": "this is another title",
+      "description": "Fue una escritora, periodista y militante política cubana. Desarrolló su carrera artística conjuntamente con una vida política activa. Dentro de su amplia trayectoria ensayística, sobresale su obra “Del encausto a la sangre: Sor Juana Inés de la Cruz”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1912-01-01",
+      "endDate": "1980-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 51,
+      "code": "CUB090",
+      "type": "personalidad",
+      "title": "Eduardo Chibás",
+      "title_en": "this is another title",
+      "description": "Político cubano, destacado por su ardua lucha en contra de la dictadura de Gerardo Machado. Fue miembro del Directorio Estudiantil Universitario y fundó el Partido del Pueblo Cubano (Ortodoxo) bajo la consigna “Vergüenza contra Dinero”, desde el cual aglutinó y movilizó a las masas populares en las luchas de carácter cívico.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1907-01-01",
+      "endDate": "1951-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 52,
+      "code": "CUB092",
+      "type": "personalidad",
+      "title": "Jean Baptiste Vermay",
+      "title_en": "this is another title",
+      "description": "Pintor neoclásico francés, cuyas obras más conocidas son los tres óleos del Templete. Fundó en 1818 la Academia de Bellas Artes San Alejandro, de la que fue su primer director.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1784-01-01",
+      "endDate": "1833-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 53,
+      "code": "CUB005",
+      "type": "personalidad",
+      "title": "Obispo Espada",
+      "title_en": "this is another title",
+      "description": "El Obispo Espada fue consagrado en la Catedral de La Habana, donde emprendió una vasta labor de reforma de la Iglesia. En su legado se cuenta también la prohibición de enterramientos en los espacios eclesiásticos y la construcción del primer Cementerio General de La Habana (Cementerio de Espada) y el Templete, en los cuales introdujo el estilo neoclásico en la Isla.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1800-01-01",
+      "endDate": "",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 54,
+      "code": "CUB034",
+      "type": "personalidad",
+      "title": "Julián del Casal",
+      "title_en": "this is another title",
+      "description": "Intelectual, poeta y periodista cubano, una de las grandes voces de la poesía del siglo XIX. Casal fue uno de los iniciadores del modernismo hispanoamericano.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1863-01-01",
+      "endDate": "1893-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 55,
+      "code": "CUB036",
+      "type": "personalidad",
+      "title": "Luisa Pérez de Zambrana",
+      "title_en": "this is another title",
+      "description": "Escritora cubana del siglo XIX, una de las más distinguidas representaciones del romanticismo en la literatura cubana. Fundó y dirigió la revista “Kaleidoscopio”. Entre su vasta obra se encuentran los libros “Devocionario”, “La vuelta al bosque”, “Dolor supremo” y “Martirio”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1835-01-01",
+      "endDate": "1922-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 56,
+      "code": "CUB037",
+      "type": "personalidad",
+      "title": "Enrique José Varona",
+      "title_en": "this is another title",
+      "description": "Doctor en Filosofía y Letras, maestro y político cubano, considerado uno de los intelectuales de la Isla más influyentes en los finales del siglo XIX y la primera mitad del siglo XX. Preparó el plan y la organización de la enseñanza secundaria y universitaria en Cuba, conocido como “Plan Varona”, que entró en vigor a mediados de 1900.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1849-01-01",
+      "endDate": "1933-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 57,
+      "code": "CUB039",
+      "type": "personalidad",
+      "title": "Máximo Gómez Báez",
+      "title_en": "this is another title",
+      "description": "Fue uno de los más sobresalientes protagonistas de la gesta emancipadora. Llevó a cabo contra los españoles lo que se ha llamado en la historia como la primera carga al machete.  Junto a Martí redacta el Manifiesto de Montecristi, que llamó al pueblo cubano a la lucha armada y a la victoria.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1836-01-01",
+      "endDate": "1905-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 58,
+      "code": "CUB040",
+      "type": "personalidad",
+      "title": "Antonio Maceo y Grajales",
+      "title_en": "this is another title",
+      "description": "Mayor General del Ejército Libertador, iniciado en la masonería, los principios de la logia y el sentido liberal y justo.  Por el ímpetu y bravura con que enfrentó al enemigo, y por su talla como hombre integral, pasó a la historia como el Titán de Bronce.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1845-01-01",
+      "endDate": "1896-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 59,
+      "code": "CUB041",
+      "type": "personalidad",
+      "title": "Calixto García Iñíguez",
+      "title_en": "this is another title",
+      "description": "Líder insurrecto cubano que participó en las acciones de la Guerra de los Diez Años (1868-1878), la Guerra Chiquita (1879-1880) y la Guerra Necesaria (1895-1898), nombrado entre sus compañeros como el león holguinero.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1839-01-01",
+      "endDate": "1898-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 60,
+      "code": "CUB043",
+      "type": "personalidad",
+      "title": "Ana Betancourt",
+      "title_en": "this is another title",
+      "description": "Destacada independentista cubana y patriota insigne de la ciudad de Camagüey. Pasó a la historia por proclamar la redención de la mujer cubana en un discurso lleno de patriotismo durante la Asamblea de Guáimaro, en 1869, convirtiéndose en la primera líder feminista de Cuba y Latinoamérica.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1832-01-01",
+      "endDate": "1901-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 61,
+      "code": "CUB044",
+      "type": "personalidad",
+      "title": "Mariana Grajales",
+      "title_en": "this is another title",
+      "description": "Patriota independentista, madre de los Maceo. Consagró su vida a la lucha por la independencia de Cuba a la que entregó, con amor de madre y orgullo de patriota, a todos los hijos. Alentó la rebeldía de Antonio Maceo en su histórica Protesta de Baraguá el 15 de marzo de 1895.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1815-01-01",
+      "endDate": "1893-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 62,
+      "code": "CUB045",
+      "type": "personalidad",
+      "title": "Quintín Bandera",
+      "title_en": "this is another title",
+      "description": "General cubano que combatió en las tres Guerras de Independencia. En 1878 estuvo con Antonio Maceo en los Mangos de Baraguá y, más tarde, con José Maceo en las contiendas de la Guerra Chiquita. Sobrevivió a la guerra para ver el fin de la dominación colonial, la ocupación militar estadounidense y la proclamación de la República.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1834-01-01",
+      "endDate": "1906-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 63,
+      "code": "CUB046",
+      "type": "personalidad",
+      "title": "Serafín Sánchez Valdivia",
+      "title_en": "this is another title",
+      "description": "Combatiente de las tres guerras independentistas de Cuba donde logró alcanzar el grado de Mayor General del Ejército Libertador cubano. Exiliado en Estados Unidos, conoció a José Martí y se convirtió en una figura importante dentro de la emigración cubana en dicho país.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1846-01-01",
+      "endDate": "1896-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 64,
+      "code": "CUB047",
+      "type": "personalidad",
+      "title": "Salvador Cisneros Betancourt",
+      "title_en": "this is another title",
+      "description": "Fue uno de los actores principales en la trama conspiradora que precedió al levantamiento de los camagüeyanos, el 4 de noviembre en Las Clavellinas. Formó parte de la Asamblea Constituyente de 1901 y emitió el célebre voto particular contra la Enmienda Platt.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1828-01-01",
+      "endDate": "1914-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 65,
+      "code": "CUB048",
+      "type": "personalidad",
+      "title": "Bartolomé Masó y Márquez",
+      "title_en": "this is another title",
+      "description": "Entre los hombres del levantamiento del 10 de octubre en Demajagua estuvo Masó. En septiembre de 1895 fue proclamado vicepresidente de la República de Cuba en la Asamblea Constituyente de Jimguayú y, dos años después, presidente en la Asamblea de la Yaya. Fue la primera autoridad de la República en los momentos de la intervención militar norteamericana.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1830-01-01",
+      "endDate": "1907-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 66,
+      "code": "CUB049",
+      "type": "personalidad",
+      "title": "Enrique Loynaz y del Castillo",
+      "title_en": "this is another title",
+      "description": "General de Brigada del Ejército Libertador cubano con una destacada participación en la Guerra del 95. Es el autor de la letra del Himno Invasor para el ejército independentista.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1871-01-01",
+      "endDate": "1963-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 67,
+      "code": "CUB087",
+      "type": "personalidad",
+      "title": "Vilma Espín y Celia Sánchez",
+      "title_en": "this is another title",
+      "description": "Celia Sánchez y Vilma Espín fueron dos grandes combatientes de la gesta independista de la Revolución cubana. Ambas formaron parte como miembros activos del Movimiento 26 de Julio. Por su labor, Celia Sánchez es conocida como la flor autóctona de la Revolución. En 1960, Vilma Espín fundó la Federación de Mujeres Cubanas, a la que se dedicó hasta su muerte.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1950-01-01",
+      "endDate": "1960-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 68,
+      "code": "CUB093",
+      "type": "personalidad",
+      "title": "Vilma Espín Guillois",
+      "title_en": "this is another title",
+      "description": "En 1960, Vilma Espín fundó la Federación de Mujeres Cubanas, una organización de masas que tiene como objetivo la igualdad y la emancipación de la mujer, reclamando una mayor participación de las mujeres en el proceso de Cuba.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1930-01-01",
+      "endDate": "2007-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 69,
+      "code": "CUB050",
+      "type": "personalidad",
+      "title": "Pedro Betancourt",
+      "title_en": "Pedro Betancourt",
+      "description": "Médico cirujano y patriota matancero que obtuvo el grado de Mayor General del Ejército Libertador cubano en la Guerra del 95. Murió en La Habana, el 19 de mayo de 1933, cuando se encontraba conspirando contra la dictadura de Gerardo Machado.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1858-01-01",
+      "endDate": "1933-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 70,
+      "code": "CUB051",
+      "type": "personalidad",
+      "title": "José Julián Martí Pérez",
+      "title_en": "José Julián Martí Pérez",
+      "description": "Héroe Nacional de Cuba. Fue un hombre de elevados principios, vocación latinoamericana e internacionalista. Se convirtió en el más grande pensador político hispanoamericano del siglo XIX. Autor de una obra imprescindible entre la que se destaca “La Edad de Oro”, “Ismaelillo”, “Mi raza”, y “Nuestra América”, entre muchas otras.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1853-01-01",
+      "endDate": "1895-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 71,
+      "code": "CUB052",
+      "type": "personalidad",
+      "title": "Emilio Roig de Leuchsenring",
+      "title_en": "Emilio Roig de Leuchsenring",
+      "description": "Historiador, etnólogo, periodista y patriota cubano. Fue el primer Historiador de La Habana, a partir de 1935 hasta su muerte. Entre sus labores más importantes se destaca su papel como miembro del Colegio Nacional de Periodistas, de la Comisión de Monumentos, Edificios y Lugares Históricos y Artísticos Habaneros, y de otras instituciones.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1889-01-01",
+      "endDate": "1964-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 72,
+      "code": "CUB053",
+      "type": "personalidad",
+      "title": "Rubén Martínez Villena",
+      "title_en": "Rubén Martínez Villena",
+      "description": "Intelectual, escritor y destacado revolucionario, líder de la Protesta de los Trece y fundador del Grupo Minorista. Poeta reconocido desde su temprana juventud tuvo, sin embargo, una escasa obra, debido a que volcó todas sus energías a la lucha revolucionaria. Entre sus obras más conocidas están “La pupila insomne”, “El gigante”, “Madrigal” y “Canción del sainete póstumo”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1899-01-01",
+      "endDate": "1934-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 73,
+      "code": "CUB054",
+      "type": "personalidad",
+      "title": "Víctor Manuel",
+      "title_en": "Víctor Manuel",
+      "description": "Pintor cubano, discípulo de Romañach, que desde el primer momento se alejó del academicismo, debido a las influencias vanguardistas que recibió durante su estancia en Francia (1924-1927). Con sus obras, se inicia el arte cubano moderno, entre las que se encuentra “Gitana tropical”. Expuso con regularidad en la Asociación de Pintores y Escultores y en la Sociedad Lyceum de La Habana. Ganó premios en los salones del Ministerio de Educación en los años 1935 y 1938.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1897-01-01",
+      "endDate": "1969-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 74,
+      "code": "CUB063",
+      "type": "personalidad",
+      "title": "Benny Moré",
+      "title_en": "Benny Moré",
+      "description": "Cantante y compositor cubano. Por su genialidad musical que sintetiza todos los ritmos populares cubanos se le conoce como “El Bárbaro del Ritmo”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1919-01-01",
+      "endDate": "1963-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 75,
+      "code": "CUB065",
+      "type": "personalidad",
+      "title": "Alejo Carpentier",
+      "title_en": "Alejo Carpentier",
+      "description": "Entre sus obras se destaca “El reino de este mundo”, la cual aborda “lo real maravilloso del Caribe”. Fue premio Cervantes de literatura en 1977.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1904-01-01",
+      "endDate": "1980-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 76,
+      "code": "CUB070",
+      "type": "personalidad",
+      "title": "Abel Santamaría Cuadrado",
+      "title_en": "Abel Santamaría Cuadrado",
+      "description": "Joven revolucionario cubano, segundo jefe del movimiento revolucionario. En el juicio del Moncada Fidel lo definió como “el alma del movimiento”.",
+      "description_en": "and this is the description of another post",
+      "updatedDate": "2019-01-03 12:00:00",
+      "startDate": "1927-01-01",
+      "endDate": "1953-01-01",
+      "dateMask": "yyyy"
+    },
+    {
+      "id": 77,
+      "code": "1234",
+      "title": "123",
+      "title_en": "123",
+      "type": "obra",
+      "description": "123",
+      "description_en": "123",
+      "startDate": "123",
+      "endDate": "123",
+      "updatedDate": "2019-01-14 14:26:27",
+      "dateMask": "123"
     }
   ],
   "images": [
     {
-      "id": 1,
-      "path": "images/img3.jpg",
-      "postId": "1",
-      "footNote": "español 1234",
-      "footNote_en": "ingles 1234"
-    },
-    {
-      "id": 2,
-      "path": "images/img4.jpg",
       "postId": 1,
-      "footNote": "español2",
-      "footNote_en": "ingles2"
+      "id": 1,
+      "path": "images/CUB001_0.aborigenes.jpg",
+      "footNote": "primera descripcion",
+      "footNote_en": "first footnote"
     },
     {
+      "postId": 1,
+      "id": 2,
+      "path": "images/CUB001_1.aborigenes.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 2,
+      "id": 3,
+      "path": "images/CUB002_0.cristobal.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 2,
       "id": 4,
-      "path": "images/Untitled.png",
-      "postId": "3",
-      "footNote": "captura2",
-      "footNote_en": "snapshot2"
+      "path": "images/CUB002_1.cristobal.jpg",
+      "footNote": "",
+      "footNote_en": ""
     },
     {
+      "postId": 3,
       "id": 5,
-      "path": "images/Untitled.png",
-      "postId": "2",
-      "footNote": "captura",
-      "footNote_en": "snapshot"
+      "path": "images/CUB003_0.virgendelacaridad.jpg",
+      "footNote": "",
+      "footNote_en": ""
     },
     {
+      "postId": 3,
       "id": 6,
-      "path": "images/Document.png",
-      "postId": "4",
-      "footNote": "docu es",
-      "footNote_en": "document en"
+      "path": "images/CUB003_1.virgendelacaridad.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 3,
+      "id": 7,
+      "path": "images/CUB003_2.virgendelacaridad.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 3,
+      "id": 8,
+      "path": "images/CUB003_3.virgendelacaridad.jpeg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 3,
+      "id": 9,
+      "path": "images/CUB003_4.El Cobre, santuario de la Patrona de Cuba_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 4,
+      "id": 10,
+      "path": "images/CUB004_0.ferrocarril.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 4,
+      "id": 11,
+      "path": "images/CUB004_1.ferrocarril.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 4,
+      "id": 12,
+      "path": "images/CUB004_2.ferrocarril.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 5,
+      "id": 13,
+      "path": "images/CUB006_0.bandera.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 5,
+      "id": 14,
+      "path": "images/CUB006_1. Miguel Teurbe Tolón_.png",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 5,
+      "id": 15,
+      "path": "images/CUB006_2. Emilia Teurbe Tolón_.png",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 5,
+      "id": 16,
+      "path": "images/CUB006_3. Narciso López_.gif",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 5,
+      "id": 17,
+      "path": "images/CUB006_4.bandera.png",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 6,
+      "id": 18,
+      "path": "images/CUB007_0.inicio_guerra.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 6,
+      "id": 19,
+      "path": "images/CUB007_1.inicio_guerra.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 6,
+      "id": 20,
+      "path": "images/CUB007_2. Bandera de Carlos Manuel de Céspedes_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 6,
+      "id": 21,
+      "path": "images/CUB007_3. Parque Museo Demajagua_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 6,
+      "id": 22,
+      "path": "images/CUB007_4.inicio_guerra.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 7,
+      "id": 23,
+      "path": "images/CUB008_0.maine.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 7,
+      "id": 24,
+      "path": "images/CUB008_1.maine.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 7,
+      "id": 25,
+      "path": "images/CUB008_2.maine.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 7,
+      "id": 26,
+      "path": "images/CUB008_3. Monumento a las víctimas del maine, sito en la avenida de Malecón. La Habana_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 8,
+      "id": 27,
+      "path": "images/CUB009_0.establecimiento_republica.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 8,
+      "id": 28,
+      "path": "images/CUB009_1.establecimiento_republica.png",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 9,
+      "id": 29,
+      "path": "images/CUB010_0.emigracion_espanola.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 9,
+      "id": 30,
+      "path": "images/CUB010_1.emigracion_espanola.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 9,
+      "id": 31,
+      "path": "images/CUB010_2.emigracion_espanola.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 9,
+      "id": 32,
+      "path": "images/CUB010_3. Niños en la colonia infantil de Triscornia_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 33,
+      "path": "images/CUB011_0.moncada.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 34,
+      "path": "images/CUB011_1.moncada.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 35,
+      "path": "images/CUB011_2.moncada.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 36,
+      "path": "images/CUB011_3. Presos del asalto al cuartel de Moncada escoltados por soldados cubanos.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 37,
+      "path": "images/CUB011_4.moncada.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 10,
+      "id": 38,
+      "path": "images/CUB011_5.moncada.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 11,
+      "id": 39,
+      "path": "images/CUB012_0.alfabetizadores.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 11,
+      "id": 40,
+      "path": "images/CUB012_1. Desfile de alfabetizadores en la Plaza Cívica, 1961.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 11,
+      "id": 41,
+      "path": "images/CUB012_2.alfabetizadores.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 11,
+      "id": 42,
+      "path": "images/CUB012_3.alfabetizadores.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 11,
+      "id": 43,
+      "path": "images/CUB012_4.alfabetizadores.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 12,
+      "id": 44,
+      "path": "images/CUB013_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 12,
+      "id": 45,
+      "path": "images/CUB013_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 12,
+      "id": 46,
+      "path": "images/CUB013_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 12,
+      "id": 47,
+      "path": "images/CUB013_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 12,
+      "id": 48,
+      "path": "images/CUB013_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 16,
+      "id": 49,
+      "path": "images/CUB014_0.La primera misa_.jpg",
+      "footNote": "La primera misa bajo la ceiba memorable, de 1826. Óleo/ lienzo, 200 x 300 cm. Jean Baptiste Vermay (1786-1833). El Templete, La Habana, Cuba",
+      "footNote_en": ""
+    },
+    {
+      "postId": 19,
+      "id": 50,
+      "path": "images/CUB015_0.La jungla. Wifredo Lam.jpg",
+      "footNote": "Gouache sobre papel montado sobre lienzo, 239.4 x 229.9 cm. Museo de Arte Moderno MoMA, Nueva York, Estados Unidos",
+      "footNote_en": ""
+    },
+    {
+      "postId": 20,
+      "id": 51,
+      "path": "images/CUB016_0.Milicias-campesinas. Servando Cabrera.jpg",
+      "footNote": "Óleo / lienzo, 140.5 x 201 cm. Museo Nacional de Bellas Artes, La Habana, Cuba",
+      "footNote_en": ""
+    },
+    {
+      "postId": 18,
+      "id": 52,
+      "path": "images/CUB017_0.Revista Social.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 17,
+      "id": 53,
+      "path": "images/CUB018_0.Bohemia.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 15,
+      "id": 54,
+      "path": "images/CUB019_0.jpg",
+      "footNote": "Litografía sobre papel. Dominique Serres",
+      "footNote_en": ""
+    },
+    {
+      "postId": 15,
+      "id": 55,
+      "path": "images/CUB019_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 14,
+      "id": 56,
+      "path": "images/CUB020_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 14,
+      "id": 57,
+      "path": "images/CUB020_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 21,
+      "id": 59,
+      "path": "images/CUB021_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 21,
+      "id": 60,
+      "path": "images/CUB021_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 22,
+      "id": 61,
+      "path": "images/CUB022_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 22,
+      "id": 62,
+      "path": "images/CUB022_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 23,
+      "id": 63,
+      "path": "images/CUB023_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 23,
+      "id": 64,
+      "path": "images/CUB023_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 23,
+      "id": 65,
+      "path": "images/CUB023_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 24,
+      "id": 66,
+      "path": "images/CUB024_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 25,
+      "id": 67,
+      "path": "images/CUB025_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 25,
+      "id": 68,
+      "path": "images/CUB025_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 25,
+      "id": 69,
+      "path": "images/CUB025_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 26,
+      "id": 70,
+      "path": "images/CUB026_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 26,
+      "id": 71,
+      "path": "images/CUB026_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 26,
+      "id": 72,
+      "path": "images/CUB026_2. Monumento de Heredia en el Niágara_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 26,
+      "id": 73,
+      "path": "images/CUB026_3. Poema Oda al Niágara_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 27,
+      "id": 74,
+      "path": "images/CUB027_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 27,
+      "id": 75,
+      "path": "images/CUB027_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 27,
+      "id": 76,
+      "path": "images/CUB027_2. Escultura en bronce que representa a Cecilia. Obra del artista Erig Rebull.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 28,
+      "id": 77,
+      "path": "images/CUB028_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 28,
+      "id": 78,
+      "path": "images/CUB028_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 29,
+      "id": 79,
+      "path": "images/CUB029_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 29,
+      "id": 80,
+      "path": "images/CUB029_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 30,
+      "id": 81,
+      "path": "images/CUB030_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 30,
+      "id": 82,
+      "path": "images/CUB030_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 31,
+      "id": 83,
+      "path": "images/CUB031_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 31,
+      "id": 84,
+      "path": "images/CUB031_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 31,
+      "id": 85,
+      "path": "images/CUB031_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 31,
+      "id": 86,
+      "path": "images/CUB031_3. Monumento en homenaje a Felipe Poey, en la Facultad de Matemática de la Universidad de La Habana.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 31,
+      "id": 87,
+      "path": "images/CUB031_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 32,
+      "id": 88,
+      "path": "images/CUB032_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 32,
+      "id": 89,
+      "path": "images/CUB032_1. Estatua de Carlos J. Finlay frente al Museo Histórico que lleva su nombre en La Habana.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 33,
+      "id": 90,
+      "path": "images/CUB033_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 33,
+      "id": 91,
+      "path": "images/CUB033_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 33,
+      "id": 92,
+      "path": "images/CUB033_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 33,
+      "id": 93,
+      "path": "images/CUB033_3.Busto del patriota cubano en el Aeropuerto Juan Gualberto Gómez, en Matanzas.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 54,
+      "id": 94,
+      "path": "images/CUB034_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 54,
+      "id": 95,
+      "path": "images/CUB034_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 54,
+      "id": 96,
+      "path": "images/CUB034_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 54,
+      "id": 97,
+      "path": "images/CUB034_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 34,
+      "id": 98,
+      "path": "images/CUB035_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 55,
+      "id": 99,
+      "path": "images/CUB036_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 55,
+      "id": 100,
+      "path": "images/CUB036_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 55,
+      "id": 101,
+      "path": "images/CUB036_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 35,
+      "id": 102,
+      "path": "images/CUB038_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 35,
+      "id": 103,
+      "path": "images/CUB038_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 35,
+      "id": 104,
+      "path": "images/CUB038_2. Casa donde nació Céspedes, en Bayamo, en 1819.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 57,
+      "id": 105,
+      "path": "images/CUB039_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 57,
+      "id": 106,
+      "path": "images/CUB039_1. Máximo Gómez y parte de su familia_.png",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 57,
+      "id": 107,
+      "path": "images/CUB039_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 57,
+      "id": 108,
+      "path": "images/CUB039_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 57,
+      "id": 109,
+      "path": "images/CUB039_4. Monumento a Máximo Gómez en La Habana_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 110,
+      "path": "images/CUB040_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 111,
+      "path": "images/CUB040_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 112,
+      "path": "images/CUB040_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 113,
+      "path": "images/CUB040_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 114,
+      "path": "images/CUB040_4. Protesta de Baragua_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 58,
+      "id": 115,
+      "path": "images/CUB040_5. Muerte de Maceo, de Armando García Menocal_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 59,
+      "id": 116,
+      "path": "images/CUB041_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 59,
+      "id": 117,
+      "path": "images/CUB041_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 59,
+      "id": 118,
+      "path": "images/CUB041_2. Calixto García y William Ludlow en Cuba_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 36,
+      "id": 119,
+      "path": "images/CUB042_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 36,
+      "id": 120,
+      "path": "images/CUB042_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 60,
+      "id": 121,
+      "path": "images/CUB043_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 60,
+      "id": 122,
+      "path": "images/CUB043_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 60,
+      "id": 123,
+      "path": "images/CUB043_2. Ana Betancourt e Ignacio Mora_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 61,
+      "id": 124,
+      "path": "images/CUB044_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 61,
+      "id": 125,
+      "path": "images/CUB044_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 61,
+      "id": 126,
+      "path": "images/CUB044_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 62,
+      "id": 127,
+      "path": "images/CUB045_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 62,
+      "id": 128,
+      "path": "images/CUB045_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 62,
+      "id": 129,
+      "path": "images/CUB045_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 63,
+      "id": 130,
+      "path": "images/CUB046_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 63,
+      "id": 131,
+      "path": "images/CUB046_1. Óleo de Francisco Rodríguez que representa al General Serafín Sánchez Valdivia_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 63,
+      "id": 132,
+      "path": "images/CUB046_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 64,
+      "id": 133,
+      "path": "images/CUB047_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 64,
+      "id": 134,
+      "path": "images/CUB047_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 64,
+      "id": 135,
+      "path": "images/CUB047_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 64,
+      "id": 136,
+      "path": "images/CUB047_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 65,
+      "id": 137,
+      "path": "images/CUB048_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 65,
+      "id": 138,
+      "path": "images/CUB048_1. Bartolomé Masó en el centro_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 65,
+      "id": 139,
+      "path": "images/CUB048_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 65,
+      "id": 140,
+      "path": "images/CUB048_3. Medalla respetable de la Logia Masónica a Bartolomé Masó_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 66,
+      "id": 141,
+      "path": "images/CUB049_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 66,
+      "id": 142,
+      "path": "images/CUB049_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 66,
+      "id": 143,
+      "path": "images/CUB049_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 69,
+      "id": 144,
+      "path": "images/CUB050_0.Pedro Betancourt.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 145,
+      "path": "images/CUB051_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 146,
+      "path": "images/CUB051_1. Retrato de Martí al ser condenado, 1870_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 147,
+      "path": "images/CUB051_2. Martí con su hijo José Francisco, 1880_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 148,
+      "path": "images/CUB051_3. Martí y María Mantilla, en New York, 1890_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 149,
+      "path": "images/CUB051_4. Martí y el General Gómez en New York, 1894_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 70,
+      "id": 150,
+      "path": "images/CUB051_5. Retrato junto a Fermín y Francisco Gómez Toro (Panchito). Cayo Hueso, Florida, 1894_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 151,
+      "path": "images/CUB052_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 152,
+      "path": "images/CUB052_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 153,
+      "path": "images/CUB052_2. Emilio Roig con las Actas del Ayuntamiento_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 154,
+      "path": "images/CUB052_3. Emilio Roig, obra ubicada en el Palacio de los Capinanes Geneales_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 155,
+      "path": "images/CUB052_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 71,
+      "id": 156,
+      "path": "images/CUB052_5. Eusebio Leal, segundo Historiador de La Habana, sucesor de Emilio Roig_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 72,
+      "id": 157,
+      "path": "images/CUB053_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 72,
+      "id": 158,
+      "path": "images/CUB053_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 72,
+      "id": 159,
+      "path": "images/CUB053_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 72,
+      "id": 160,
+      "path": "images/CUB053_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 161,
+      "path": "images/CUB054_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 162,
+      "path": "images/CUB054_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 163,
+      "path": "images/CUB054_2. Gitana tropical,  1929, 46.5 x 38 cm. Museo Nacional de Bellas Artes_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 164,
+      "path": "images/CUB054_3. Paisaje con parejas, 1943, 66.5 x 55 cm. Museo Nacional de Bellas Artes_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 165,
+      "path": "images/CUB054_4. Joven sentada, 1917, óleo sobre tela, 64.5 x 55 cm. Museo Nacional de Bellas Artes_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 73,
+      "id": 166,
+      "path": "images/CUB054_5. Mestiza, creyón sobre papel entelado, 380 x 284 cm. Museo Nacional de Bellas Artes_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 37,
+      "id": 167,
+      "path": "images/CUB057_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 37,
+      "id": 168,
+      "path": "images/CUB057_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 38,
+      "id": 169,
+      "path": "images/CUB058_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 38,
+      "id": 170,
+      "path": "images/CUB058_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 39,
+      "id": 171,
+      "path": "images/CUB060_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 39,
+      "id": 172,
+      "path": "images/CUB060_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 39,
+      "id": 173,
+      "path": "images/CUB060_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 39,
+      "id": 174,
+      "path": "images/CUB060_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 175,
+      "path": "images/CUB061_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 176,
+      "path": "images/CUB061_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 177,
+      "path": "images/CUB061_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 117,
+      "path": "images/CUB061_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 178,
+      "path": "images/CUB061_4. Mural Las frutas cubanas, situado en la fachada del hotel Habana Libre_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 40,
+      "id": 179,
+      "path": "images/CUB061_5. Naturaleza muerta en un interior, Amelia Peláez_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 41,
+      "id": 180,
+      "path": "images/CUB062_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 41,
+      "id": 181,
+      "path": "images/CUB062_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 74,
+      "id": 182,
+      "path": "images/CUB063_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 74,
+      "id": 183,
+      "path": "images/CUB063_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 74,
+      "id": 184,
+      "path": "images/CUB063_2. Monumento al Benny, en el Paseo del Prado de Cienfuegos_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 74,
+      "id": 185,
+      "path": "images/CUB063_3. Entrada de la provincia de Cienfueos. Homeneja al Benny.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 42,
+      "id": 186,
+      "path": "images/CUB064_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 42,
+      "id": 187,
+      "path": "images/CUB064_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 188,
+      "path": "images/CUB065_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 189,
+      "path": "images/CUB065_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 190,
+      "path": "images/CUB065_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 191,
+      "path": "images/CUB065_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 192,
+      "path": "images/CUB065_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 75,
+      "id": 193,
+      "path": "images/CUB065_5.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 76,
+      "id": 194,
+      "path": "images/CUB070_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 76,
+      "id": 195,
+      "path": "images/CUB070_1. Fidel Castro y Abel Santamaría_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 76,
+      "id": 196,
+      "path": "images/CUB070_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 76,
+      "id": 197,
+      "path": "images/CUB070_4. Parque Histórico Abel Santamaría, en Santiago de Cuba.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 43,
+      "id": 198,
+      "path": "images/CUB080_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 43,
+      "id": 199,
+      "path": "images/CUB080_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 43,
+      "id": 200,
+      "path": "images/CUB080_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 43,
+      "id": 201,
+      "path": "images/CUB080_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 44,
+      "id": 202,
+      "path": "images/CUB082_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 44,
+      "id": 203,
+      "path": "images/CUB082_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 44,
+      "id": 204,
+      "path": "images/CUB082_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 205,
+      "path": "images/CUB083_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 206,
+      "path": "images/CUB083_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 207,
+      "path": "images/CUB083_2. Alicia Alonso en 1955.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 208,
+      "path": "images/CUB083_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 209,
+      "path": "images/CUB083_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 45,
+      "id": 210,
+      "path": "images/CUB083_5.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 46,
+      "id": 211,
+      "path": "images/CUB084_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 46,
+      "id": 212,
+      "path": "images/CUB084_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 46,
+      "id": 213,
+      "path": "images/CUB084_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 46,
+      "id": 214,
+      "path": "images/CUB084_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 47,
+      "id": 215,
+      "path": "images/CUB085_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 47,
+      "id": 216,
+      "path": "images/CUB085_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 47,
+      "id": 217,
+      "path": "images/CUB085_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 48,
+      "id": 218,
+      "path": "images/CUB086_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 48,
+      "id": 219,
+      "path": "images/CUB086_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 48,
+      "id": 220,
+      "path": "images/CUB086_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 67,
+      "id": 221,
+      "path": "images/CUB087_0. Celia Sánchez y Vilma Espín. Sierra Maestra. 195_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 67,
+      "id": 222,
+      "path": "images/CUB087_1. Celia Sánchez_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 67,
+      "id": 223,
+      "path": "images/CUB087_2. Vilma Espín_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 49,
+      "id": 224,
+      "path": "images/CUB088_0. Pablo de la Torriente Brau, a la izquierda, apoyado en un cañón_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 49,
+      "id": 225,
+      "path": "images/CUB088_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 50,
+      "id": 226,
+      "path": "images/CUB089_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 50,
+      "id": 227,
+      "path": "images/CUB089_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 51,
+      "id": 228,
+      "path": "images/CUB090_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 51,
+      "id": 229,
+      "path": "images/CUB090_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 51,
+      "id": 230,
+      "path": "images/CUB090_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 51,
+      "id": 231,
+      "path": "images/CUB090_3.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 51,
+      "id": 232,
+      "path": "images/CUB090_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 13,
+      "id": 233,
+      "path": "images/CUB091_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 13,
+      "id": 234,
+      "path": "images/CUB091_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 52,
+      "id": 235,
+      "path": "images/CUB092_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 52,
+      "id": 236,
+      "path": "images/CUB092_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 52,
+      "id": 237,
+      "path": "images/CUB092_2. Vista interior del Templete_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 52,
+      "id": 238,
+      "path": "images/CUB092_3. La primera misa bajo la ceiba memorable, de 1826, en el Templete_.jpg",
+      "footNote": "La primera misa bajo la ceiba memorable, de 1826. Óleo/ lienzo, 200 x 300 cm. Jean Baptiste Vermay (1786-1833). El Templete, La Habana, Cuba",
+      "footNote_en": ""
+    },
+    {
+      "postId": 52,
+      "id": 239,
+      "path": "images/CUB092_4. Obra de Vermay. Título Retrato de hombre, 1819_.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 68,
+      "id": 240,
+      "path": "images/CUB093_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 68,
+      "id": 241,
+      "path": "images/CUB093_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 68,
+      "id": 242,
+      "path": "images/CUB093_2.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 68,
+      "id": 243,
+      "path": "images/CUB093_3. III Congreso de la Federación de Mujeres Cubanas, 1980.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 68,
+      "id": 244,
+      "path": "images/CUB093_4.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 56,
+      "id": 245,
+      "path": "images/CUB037_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 56,
+      "id": 246,
+      "path": "images/CUB037_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 53,
+      "id": 247,
+      "path": "images/CUB005_0.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 53,
+      "id": 248,
+      "path": "images/CUB005_1.jpg",
+      "footNote": "",
+      "footNote_en": ""
+    },
+    {
+      "postId": 53,
+      "id": 249,
+      "path": "images/CUB005_2. Cementerio Espada.jpg",
+      "footNote": "",
+      "footNote_en": ""
     }
   ]
 }

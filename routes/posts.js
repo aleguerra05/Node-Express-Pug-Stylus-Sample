@@ -27,7 +27,9 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    var dateTime = new Date();
+    var dateTime = new Date().toISOString().
+        replace(/T/, ' ').      // replace T with a space
+        replace(/\..+/, '');    // delete the dot and everything after
     if (req.body != null 
         && req.body.code != null 
         && req.body.title != null 
@@ -104,7 +106,9 @@ router.get('/:postId(\\d+)', function (req, res, next) {
 });
 
 router.post('/edit/:postId(\\d+)', function (req, res, next) {
-    var dateTime = new Date();
+    var dateTime = new Date().toISOString().
+        replace(/T/, ' ').      // replace T with a space
+        replace(/\..+/, '');    // delete the dot and everything after
     if (req.body != null 
         && req.body.id !=null
         && req.body.code != null 
