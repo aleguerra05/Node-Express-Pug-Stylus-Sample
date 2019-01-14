@@ -1,15 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to Express
-  a(href='posts') Posts
+  p
+    a(href='/posts') Insertar Nuevo Contenido
 
-block sidebar
-  .widget
-    h1 Widget
-    p Sample app
-
-    
-      
-    
+  h1 Lista de Contenidos:
+  
+  ul
+  each val in posts
+    p
+    a(href='/posts/' + val.id) Contenido #{val.code} (#{val.id})
+  p

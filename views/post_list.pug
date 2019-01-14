@@ -2,27 +2,31 @@ extends layout
 
 block content
   p
-      a(href='../') Home
+    a(href='../') Lista de Contenidos
 
-  h1 PostList:
-  
-  ul
-  each val in posts
-    p
-    a(href='/posts/' + val.id) Post #{val.id}
-  p
-  h1= "Add a post!"
+  h1 Nuevo Contenido:
+
+  h1= "Adicionar un Contenido"
   form(action="/posts" method="POST")
-    p Code:
-      input(type="text" name="code" placeholder="")
-    p Title:
+    p Código:
+      textarea(type="text" name="code" placeholder="" rows="1" cols="60")
+    p Título:
       textarea(type="text" name="title" placeholder="" rows="1" cols="60")
-    p Description:
+    p Título Inglés:
+      textarea(type="text" name="title_en" placeholder="" rows="1" cols="60")
+    P Tipo:
+      select(name="type" placeholder="")
+        option(value=obra) obra
+        option(value=personalidad) personalidad
+        option(value=hecho) hecho
+    p Descripción:
       textarea(name="description" placeholder="" rows="6" cols="60")
-    p Date Mask:
-      input(type="text" name="dateMask" placeholder="")
-    p Start Date:
-      input(type="text" name="startDate" placeholder="")
-    p End Date:
-      input(type="text" name="endDate" placeholder="")
-    input(type="submit" value="Add Post")
+    p Descripción Inglés:
+      textarea(name="description_en" placeholder="" rows="6" cols="60")
+    p Máscara de Fecha:
+      textarea(type="text" name="dateMask" placeholder="" rows="1" cols="60")
+    p Fecha Inicio:
+      textarea(type="text" name="startDate" placeholder="" rows="1" cols="60")
+    p Fecha Fin:
+      textarea(type="text" name="endDate" placeholder="" rows="1" cols="60")
+    input(type="submit" value="Adicionar")
