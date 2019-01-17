@@ -16,26 +16,35 @@ block content
     p #{post.updatedDate}
     
     p Código:
+    p
       textarea(type="text" name="code" placeholder="" rows="1" cols="60" value=post.code) #{post.code}
     p Título:
-      textarea(name="title" placeholder="" rows="1" cols="60" value=post.title) #{post.title}
+    p
+      textarea(name="title" placeholder="" rows="2" cols="60" value=post.title) #{post.title}
     p Título Inglés:
-      textarea(name="title_en" placeholder="" rows="1" cols="60" value=post.title_en) #{post.title_en}
+    p
+      textarea(name="title_en" placeholder="" rows="2" cols="60" value=post.title_en) #{post.title_en}
     P Tipo:
+    p
       select(name="type" placeholder="") #{post.type}
         option(value=obra selected=post.type=="obra"?true:false) obra
         option(value=personalidad selected=post.type=="personalidad"?true:false) personalidad
         option(value=hecho selected=post.type=="hecho"?true:false) hecho
         value=post.type
     p Descripción:
+    p
       textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
     p Descripción Inglés:
+    p
       textarea(name="description_en" placeholder="" value=post.description_en rows="6" cols="60") #{post.description_en}
     p Máscara de Fecha:
+    p
       textarea(type="text" name="dateMask" placeholder="" rows="1" cols="60" value=post.dateMask) #{post.dateMask}
     p Fecha Inicio:
+    p
       textarea(type="text" name="startDate" placeholder="" rows="1" cols="60" value=post.startDate) #{post.startDate}
     p Fecha Fin:
+    p
       textarea(type="text" name="endDate" placeholder="" rows="1" cols="60" value=post.endDate) #{post.endDate}
     input(type="submit" value="Actualizar Contenido")
 
@@ -49,14 +58,19 @@ block content
     p Imágenes
     each ima in images
 
+      .img
+        img(src='../'+ima.path)
+
       form(action="/images/edit/"+ima.id method="POST")
         input(type="hidden" name="path" placeholder="" value=ima.path)
         input(type="hidden" name="id" placeholder="" value=ima.id)
         input(type="hidden" name="postId" placeholder="" value=post.id)
         
-        p Descripción:
+        p Pie de Imagen:
+        p
           textarea(type="text" name="footNote" placeholder="" rows="1" cols="60" value=ima.footNote) #{ima.footNote}
-        p Descripción Inglés:
+        p Pie de Imagen Inglés:
+        p
           textarea(type="text" name="footNote_en" placeholder="" rows="1" cols="60" value=ima.footNote_en) #{ima.footNote_en}
         
         // values of the image's post belong
@@ -72,10 +86,9 @@ block content
         // end of values of the image's post belong
         
         p
-          input(type="submit" value="Actualizar Descripción")
+          input(type="submit" value="Actualizar Pie de Imagen")
 
-      .img
-        img(src='../'+ima.path)
+      
       p
         form(action="/images/del/"+ima.id method="POST")
           
@@ -100,13 +113,17 @@ block content
   form(action="/images" method="POST" encType="multipart/form-data")
     //p PostId:
     input(type="hidden" name="postId" placeholder="" value=post.id readonly)
+    
     p Agregar Imagen:
+    p
       input(type="file" name="filetoupload" placeholder="")
     
     
-    p Descripción:
+    p Pie de Imagen:
+    p
       textarea(type="text" name="footNote" placeholder="" rows="1" cols="60")
-    p Descripción Inglés:
+    p Pie de Imagen Inglés:
+    p
       textarea(type="text" name="footNote_en" placeholder="" rows="1" cols="60")
 
     // values of the image's post belong

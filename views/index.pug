@@ -3,11 +3,27 @@ extends layout
 block content
   p
     a(href='/posts') Insertar Nuevo Contenido
+  p
+    a(href='/') Ver todos
+    h1 Buscar Codigo:
+    form(action="/" method="POST")
+      input(type="search", name="codeValue", value=codeValue)
+      //textarea(type="text" name="codeValue" placeholder="" rows="1" cols="60" value=codeValue)
+      input(type="submit" value="Buscar")
 
   h1 Lista de Contenidos:
   
+  if posts.length == 0
+    p No hay resultados.
+  
   ul
-  each val in posts
-    p
-    a(href='/posts/' + val.id) Contenido #{val.code} (#{val.id})
-  p
+  table(style='width:100%')
+    each val,i in posts
+      if i % 4 == 0
+        tr
+      td 
+        a(href='/posts/' + val.id) #{val.code} 
+        p
+
+  
+  

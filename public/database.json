@@ -2,13 +2,13 @@
   "posts": [
     {
       "id": 1,
+      "updatedDate": "2019-01-17T04:34:17.335Z",
       "code": "CUB001",
-      "type": "hecho",
       "title": "Aborígenes",
       "title_en": "From bla_en its medieval origins to the digital era OK! en",
+      "type": "hecho",
       "description": "En la lengua, la toponimia y algunas costumbres prevalece la herencia cultural de nuestros aborígenes. Hamaca, Habana, huracán y Guanabacoa son algunos de los vocablos heredados de nuestros aborígenes.",
       "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "updatedDate": "2019-01-05 09:09:00",
       "startDate": "1400-1-1",
       "endDate": "1492-1-1",
       "dateMask": "yyyy"
@@ -987,19 +987,6 @@
       "startDate": "1927-01-01",
       "endDate": "1953-01-01",
       "dateMask": "yyyy"
-    },
-    {
-      "id": 77,
-      "code": "1234",
-      "title": "123",
-      "title_en": "123",
-      "type": "obra",
-      "description": "123",
-      "description_en": "123",
-      "startDate": "123",
-      "endDate": "123",
-      "updatedDate": "2019-01-14 14:26:27",
-      "dateMask": "123"
     }
   ],
   "images": [
@@ -1011,11 +998,11 @@
       "footNote_en": "first footnote"
     },
     {
-      "postId": 1,
       "id": 2,
       "path": "images/CUB001_1.aborigenes.jpg",
-      "footNote": "",
-      "footNote_en": ""
+      "postId": "1",
+      "footNote": "libro contenido 1",
+      "footNote_en": "book content 1"
     },
     {
       "postId": 2,
