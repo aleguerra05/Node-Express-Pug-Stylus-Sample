@@ -5,6 +5,8 @@ var fs = require('fs');
 var Client = require('node-rest-client').Client;
 var client = new Client();
 
+var year = new Date().toISOString().substr(0,4);
+
 client.registerMethod("getPosts", "http://localhost:3001/posts/${id}", "GET");
 client.registerMethod("deletePost", "http://localhost:3001/posts/${id}", "DELETE");
 client.registerMethod("editPost", "http://localhost:3001/posts/${id}", "PUT");
@@ -17,7 +19,7 @@ router.get('/', function (req, res, next) {
     client.get("http://localhost:3001/posts/", function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('post_list', { title: 'Nuevo Contenido'});
+            res.render('post_list', { title: 'Nuevo Contenido', year: year});
         }
         else {
             res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
@@ -63,7 +65,7 @@ router.post('/', function (req, res, next) {
                 client.get("http://localhost:3001/posts/", function (data, response) {
                     console.log(response.statusCode);
                     if (response.statusCode == 200) {
-                        res.render('post_list', { title: 'Contenido adicionado satisfactoriamente', posts: data });
+                        res.render('post_list', { title: 'Contenido adicionado satisfactoriamente', posts: data, year: year });
                     }
                     else {
                         res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
@@ -95,7 +97,7 @@ router.get('/:postId(\\d+)', function (req, res, next) {
                 console.log(images);
                 console.log(imagesResponse.statusCode);
 
-                res.render('post', { title: 'Contenido ' + req.params.postId, post: data, images: images });
+                res.render('post', { title: 'Contenido ' + req.params.postId, post: data, images: images, year: year });
             });
             
         }

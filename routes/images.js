@@ -10,6 +10,8 @@ client.registerMethod("deleteImage", "http://localhost:3001/images/${id}", "DELE
 client.registerMethod("editImage", "http://localhost:3001/images/${id}", "PUT");
 client.registerMethod("editPost", "http://localhost:3001/posts/${id}", "PUT");
 
+var year = new Date().toISOString().substr(0,4);
+
 const upload = multer({
     dest: "/public"
     // you might also want to set some limits: https://github.com/expressjs/multer#limits
@@ -163,7 +165,9 @@ router.post('/edit/:imaId(\\d+)', function (req, res, next) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
             console.log("redirect back")
-            var dateTime = new Date()
+            var dateTime = new Date().toISOString().
+            replace(/T/, ' ').      // replace T with a space
+            replace(/\..+/, '');    // delete the dot and everything after
             console.log("postId:" + req.body.postId)
             
             var postArgs = {
