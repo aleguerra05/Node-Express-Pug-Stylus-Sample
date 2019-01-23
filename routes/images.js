@@ -17,6 +17,38 @@ const upload = multer({
     // you might also want to set some limits: https://github.com/expressjs/multer#limits
   });
 
+router.get('/allSize',function(req,res,next){
+
+    var imagePath = 'public/images/';
+
+    var files = fs.readdir(imagePath,function(err,files){
+        //console.log(files);
+        //console.log(err);
+        var total_size = 0;
+
+        files.forEach(f => {
+            
+            var stat = fs.lstatSync(path.join(imagePath,f));
+            total_size += stat.size;
+            //console.log(stat.size);
+            
+            /*
+            console.log(path.join(imagePath,f));
+            var stats = fs.statSync(imagePath,f);
+            console.log(stats);
+            var size = fs.statSync(imagePath,f)["size"];
+            console.log(size);
+            */
+        });
+        console.log(total_size);
+        res.setHeader('Content-Type','application/json');
+        res.send(JSON.stringify({total_size:total_size/1024/1024}));
+       
+    });
+
+   
+});
+
 router.post('/del/:imaId',function (req, res, next) {
         console.log("delete "+req.params.imaId);
 

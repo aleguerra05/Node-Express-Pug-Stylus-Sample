@@ -29,55 +29,92 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    var dateTime = new Date().toISOString().
-        replace(/T/, ' ').      // replace T with a space
-        replace(/\..+/, '');    // delete the dot and everything after
-    if (req.body != null 
-        && req.body.code != null 
-        && req.body.title != null 
-        && req.body.title_en != null 
-        && req.body.type != null 
-        && req.body.description != null
-        && req.body.description_en != null
-        && req.body.startDate != null
-        && req.body.endDate != null
-        && req.body.dateMask != null
-        ) {
-        var args = {
-            data: { 
-                code: req.body.code, 
-                title: req.body.title, 
-                title_en: req.body.title_en, 
-                type: req.body.type, 
-                description: req.body.description,
-                description_en: req.body.description_en,
-                startDate: req.body.startDate,
-                endDate: req.body.endDate,
-                updatedDate: dateTime, //"2019-01-12 12:00:00",
-                dateMask: req.body.dateMask
-            },
-            headers: { "Content-Type": "application/json" }
-        };
 
-        client.methods.createPosts(args, function (data, response) {
+    if(req.body != null && req.body.code != null )
+    {
+        client.get("http://localhost:3001/posts?code="+req.body.code, function (data, response) {
+            console.log(response.statusCode);
+            if (response.statusCode == 200) {
+                console.log('search 200');
+                console.log(data);
 
-            if (response.statusCode == 201) {
-                client.get("http://localhost:3001/posts/", function (data, response) {
-                    console.log(response.statusCode);
-                    if (response.statusCode == 200) {
-                        res.render('post_list', { title: 'Contenido adicionado satisfactoriamente', posts: data, year: year });
+                if(data.length>0){
+                    var hiperlink = "<a href=\"http://localhost:3001/posts?code="+req.body.code+">"+req.body.code+"</a>";
+                    var htmlSection = !hiperlink
+                    return res.render('message', { title: 'Error', message: 'Ya existe un contenido con el codigo:'+req.body.code});
+                    //return res.render('message', { title: 'Error', message: !'Ya existe un contenido con el codigo: #{'+hiperlink+'}'});
+                }
+                else{
+                    console.log('no encontro el code');
+                
+                    var dateTime = new Date().toISOString().
+                    replace(/T/, ' ').      // replace T with a space
+                    replace(/\..+/, '');    // delete the dot and everything after
+                    console.log(req.body);
+                    if (req.body != null 
+                        && req.body.code != null 
+                        && req.body.code != '' 
+                        && req.body.title != null 
+                        && req.body.title != ''
+                        && req.body.title_en != null 
+                        && req.body.title_en != '' 
+                        && req.body.type != null 
+                        && req.body.type != ''
+                        && req.body.description != null
+                        && req.body.description != ''
+                        && req.body.description_en != null
+                        && req.body.description_en != ''
+                        && req.body.startDate != null
+                        && req.body.startDate != ''
+                        && req.body.endDate != null
+                        && req.body.endDate != ''
+                        && req.body.dateMask != null
+                        && req.body.dateMask != ''
+                    ){
+                        var args = {
+                            data: { 
+                                code: req.body.code, 
+                                title: req.body.title, 
+                                title_en: req.body.title_en, 
+                                type: req.body.type, 
+                                description: req.body.description,
+                                description_en: req.body.description_en,
+                                startDate: req.body.startDate,
+                                endDate: req.body.endDate,
+                                updatedDate: dateTime, //"2019-01-12 12:00:00",
+                                dateMask: req.body.dateMask
+                            },
+                            headers: { "Content-Type": "application/json" }
+                        };
+            
+                        client.methods.createPosts(args, function (data, response) {
+                
+                            if (response.statusCode == 201) {
+                                client.get("http://localhost:3001/posts/", function (data, response) {
+                                    console.log(response.statusCode);
+                                    if (response.statusCode == 200) {
+                                        return res.render('post_list', { title: 'Contenido adicionado satisfactoriamente', posts: data, year: year });
+                                    }
+                                    else {
+                                        return res.render('message', { title: 'Error', message: 'Error adicionando Contenido: ' + response.statusMessage });
+                                    }
+                                });
+                            }
+                            else
+                                return res.render('message', { title: 'Error', message: 'Error adicionando Contenido: ' + response.statusMessage });
+                        });
                     }
-                    else {
-                        res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
-                    }
-                });
+                    else
+                        return res.render('message', { title: 'Error', message: 'Error adicionando Contenido! Faltan campos por llenar'});        
+                }
             }
             else
-                res.render('message', { title: 'Error', message: 'Error adicionando Contenido!' + response.statusMessage });
+            {
+                console.log('search 200');
+                return res.render('message', { title: 'Error', message: 'Error adicionando Contenido: ' + response.statusMessage });
+            }
         });
-    }
-    else
-        res.render('message', { title: 'Error', message: 'Error adicionando Contenido! Faltan campos por llenar'});        
+    }  
 });
 
 router.get('/:postId(\\d+)', function (req, res, next) {
