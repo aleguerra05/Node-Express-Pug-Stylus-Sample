@@ -61,7 +61,9 @@ router.post('/del/:imaId',function (req, res, next) {
             if (response.statusCode == 200) {
                 
                 console.log("redirect back")
-                var dateTime = new Date()
+                var dateTime = new Date().toISOString().
+                replace(/T/, ' ').      // replace T with a space
+                replace(/\..+/, '');    // delete the dot and everything after
                 console.log("postId:" + req.body.postId)
                 
                 var postArgs = {
@@ -129,7 +131,9 @@ router.post('/',
                             if (response.statusCode == 200) {
                                 
                                 console.log("redirect back")
-                                var dateTime = new Date()
+                                var dateTime = new Date().toISOString().
+                                replace(/T/, ' ').      // replace T with a space
+                                replace(/\..+/, '');    // delete the dot and everything after
                                 console.log("postId:" + req.body.postId)
                                 
                                 var postArgs = {
