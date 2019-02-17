@@ -15,37 +15,55 @@ block content
     h3 Fecha de Actualización: 
     p #{post.updatedDate}
     
-    p Código:
-    p
-      textarea(type="text" name="code" placeholder="" rows="1" cols="60" value=post.code) #{post.code}
-    p Título:
-    p
-      textarea(name="title" placeholder="" rows="2" cols="60" value=post.title) #{post.title}
-    p Título Inglés:
-    p
-      textarea(name="title_en" placeholder="" rows="2" cols="60" value=post.title_en) #{post.title_en}
-    P Tipo:
-    p
-      select(name="type" placeholder="") #{post.type}
-        option(value=obra selected=post.type=="obra"?true:false) obra
-        option(value=personalidad selected=post.type=="personalidad"?true:false) personalidad
-        option(value=hecho selected=post.type=="hecho"?true:false) hecho
-        value=post.type
-    p Descripción:
-    p
-      textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
-    p Descripción Inglés:
-    p
-      textarea(name="description_en" placeholder="" value=post.description_en rows="6" cols="60") #{post.description_en}
-    p Máscara de Fecha:
-    p
-      textarea(type="text" name="dateMask" placeholder="" rows="1" cols="60" value=post.dateMask) #{post.dateMask}
-    p Fecha Inicio:
-    p
-      textarea(type="text" name="startDate" placeholder="" rows="1" cols="60" value=post.startDate) #{post.startDate}
-    p Fecha Fin:
-    p
-      textarea(type="text" name="endDate" placeholder="" rows="1" cols="60" value=post.endDate) #{post.endDate}
+    table
+      tr  
+        td
+          p Código:
+          p
+            textarea(type="text" name="code" placeholder="" rows="1" cols="10" value=post.code) #{post.code}
+        td(style='padding-left:20px')
+          P Tipo:
+          p
+            select(name="type" placeholder="") #{post.type}
+              option(value=obra selected=post.type=="obra"?true:false) obra
+              option(value=personalidad selected=post.type=="personalidad"?true:false) personalidad
+              option(value=hecho selected=post.type=="hecho"?true:false) hecho
+              value=post.type
+    table
+      tr  
+        td
+          p Título:
+          p
+            textarea(name="title" placeholder="" rows="2" cols="60" value=post.title) #{post.title}
+        td(style='padding-left:20px')
+          p Título Inglés:
+          p
+            textarea(name="title_en" placeholder="" rows="2" cols="60" value=post.title_en) #{post.title_en}
+    
+    table
+      tr  
+        td
+          p Descripción:
+          p
+            textarea(name="description" placeholder="" value=post.description rows="6" cols="60") #{post.description}
+        td(style='padding-left:20px')
+          p Descripción Inglés:
+          p
+            textarea(name="description_en" placeholder="" value=post.description_en rows="6" cols="60") #{post.description_en}
+    table
+      tr  
+        td        
+          p Máscara de Fecha:
+          p
+            textarea(type="text" name="dateMask" placeholder="" rows="1" cols="34" value=post.dateMask) #{post.dateMask}
+        td(style='padding-left:20px')
+          p Fecha Inicio:
+          p
+            textarea(type="text" name="startDate" placeholder="" rows="1" cols="40" value=post.startDate) #{post.startDate}
+        td(style='padding-left:20px')
+          p Fecha Fin:
+          p
+            textarea(type="text" name="endDate" placeholder="" rows="1" cols="40" value=post.endDate) #{post.endDate}
     input(type="submit" value="Actualizar Contenido")
 
   p
@@ -57,12 +75,12 @@ block content
   if images.length >0
     p Imágenes
     each ima in images
-      table(style='width:150%', border='1')
+      table(style='width:900px') 
         tr
-          td 
+          td(style='width:600px') 
             .img
               img(src='../'+ima.path)
-          td 
+          td(style='vertical-align:middle') 
             form(action="/images/edit/"+ima.id method="POST")
               input(type="hidden" name="path" placeholder="" value=ima.path)
               input(type="hidden" name="id" placeholder="" value=ima.id)
@@ -121,13 +139,16 @@ block content
     p
       input(type="file" name="filetoupload" placeholder="")
     
-    
-    p Pie de Imagen:
-    p
-      textarea(type="text" name="footNote" placeholder="" rows="1" cols="60")
-    p Pie de Imagen Inglés:
-    p
-      textarea(type="text" name="footNote_en" placeholder="" rows="1" cols="60")
+    table
+      tr  
+        td
+          p Pie de Imagen:
+          p
+            textarea(type="text" name="footNote" placeholder="" rows="2" cols="60")
+        td(style='padding-left:20px')
+          p Pie de Imagen Inglés:
+          p
+            textarea(type="text" name="footNote_en" placeholder="" rows="2" cols="60")
 
     // values of the image's post belong
     input(type="hidden" name="code" placeholder="" value=post.code)

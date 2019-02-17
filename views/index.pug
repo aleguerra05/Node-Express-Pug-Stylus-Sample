@@ -18,12 +18,39 @@ block content
   
   ul
   table(style='width:100%')
-    each val,i in posts
-      if i % 4 == 0
-        tr
-      td 
-        a(href='/posts/' + val.id) #{val.code} 
-        p
+    tr
+      td
+        table(style='width:100%')
+          if postsCub.length
+            each val,i in postsCub
+              if i % 4 == 0
+                tr
+              td 
+                a(href='/posts/' + val.id) #{val.code}
+                  // .tooltip
+                    //spam #{val.title}
+                p
+          else if posts.length
+            each val,i in posts
+              if i % 4 == 0
+                tr
+              td 
+                a(href='/posts/' + val.id) #{val.code}
+                  // .tooltip
+                    //spam #{val.title}
+                p
+      td
+        table(style='width:100%')
+          if postsEur.length
+            each val,i in postsEur
+              if i % 4 == 0
+                tr
+              td 
+                a(href='/posts/' + val.id) #{val.code}
+                  // .tooltip
+                    //spam #{val.title}
+                p
+    
 
   
   

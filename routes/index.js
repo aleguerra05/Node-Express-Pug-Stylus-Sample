@@ -11,15 +11,17 @@ client.registerMethod("search", "http://localhost:3001/posts?q=${codeValue}", "G
 /* GET home page. */
 router.get('/', function(req, res, next) {
   
-  client.get("http://localhost:3001/posts/", function (data, response) {
+  client.get("http://localhost:3001/posts?_sort=code&_order=des&code_like=CUB", function (dataCub, response) {
+    client.get("http://localhost:3001/posts?_sort=code&_order=des&code_like=EUR", function (dataEur, response) {
       console.log(response.statusCode);
       
       if (response.statusCode == 200) {
-          res.render('index', { title: 'Lista de Contenidos ', posts: data, year: year });
+          res.render('index', { title: 'Lista de Contenidos ', posts:{}, postsCub: dataCub, postsEur: dataEur, year: year });
       }
       else {
-          res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
+          res.render('message', { title: 'Error', message: 'detalles: ' + response.statusMessage });
       }
+    });
   });
 });
 
@@ -31,10 +33,10 @@ router.post('/',function(req,res,next){
     client.methods.search(args, function (data, response) {
         console.log(response.statusCode);
         if (response.statusCode == 200) {
-            res.render('index', { title: 'Lista de Contenidos ', posts: data, year: year });
+            res.render('index', { title: 'Lista de Contenidos ', posts: data,postsCub: {}, postsEur: {}, year: year });
         }
         else {
-            res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
+            res.render('message', { title: 'Error', message: 'detalles: ' + response.statusMessage });
         }
     });
 });
