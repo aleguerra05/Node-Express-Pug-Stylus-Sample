@@ -71,11 +71,11 @@ router.post('/del/:imaId',function (req, res, next) {
                         id: req.body.postId,
                         updatedDate: dateTime,
                         code:req.body.code,
-                        title:req.body.title.replace('\"',' '), 
-                        title_en:req.body.title_en.replace('\"',' '), 
+                        title:req.body.title.split('\"').join(' '), 
+                        title_en:req.body.title_en.split('\"').join(' '), 
                         type:req.body.type,
-                        description:req.body.description.replace('\"',' '), 
-                        description_en:req.body.description_en.replace('\"',' '), 
+                        description:req.body.description.split('\"').join(' '), 
+                        description_en:req.body.description_en.split('\"').join(' '), 
                         startDate:req.body.startDate,
                         endDate:req.body.endDate,
                         dateMask:req.body.dateMask
@@ -117,8 +117,8 @@ router.post('/',
                     data: { 
                         path:'images/'+req.file.originalname, 
                         postId:req.body.postId,
-                        footNote:req.body.footNote.replace('\"',' '), 
-                        footNote_en:req.body.footNote_en.replace('\"',' ')
+                        footNote:req.body.footNote.split('\"').join(' '), 
+                        footNote_en:req.body.footNote_en.split('\"').join(' ')
                     },
                     headers: { "Content-Type": "application/json" }
                 };
@@ -141,11 +141,11 @@ router.post('/',
                                         id: req.body.postId,
                                         updatedDate: dateTime,
                                         code:req.body.code,
-                                        title:req.body.title.replace('\"',' '), 
-                                        title_en:req.body.title_en.replace('\"',' '), 
+                                        title:req.body.title.split('\"').join(' '), 
+                                        title_en:req.body.title_en.split('\"').join(' '), 
                                         type:req.body.type,
-                                        description:req.body.description.replace('\"',' '), 
-                                        description_en:req.body.description_en.replace('\"',' '), 
+                                        description:req.body.description.split('\"').join(' '), 
+                                        description_en:req.body.description_en.split('\"').join(' '), 
                                         startDate:req.body.startDate,
                                         endDate:req.body.endDate,
                                         dateMask:req.body.dateMask
@@ -188,8 +188,8 @@ router.post('/edit/:imaId(\\d+)', function (req, res, next) {
             id: req.body.id,
             path:req.body.path, 
             postId:req.body.postId,
-            footNote:req.body.footNote.replace('\"',' '), 
-            footNote_en:req.body.footNote_en.replace('\"',' ')
+            footNote:req.body.footNote.split('\"').join(' '), 
+            footNote_en:req.body.footNote_en.split('\"').join(' ')
         },
         path:{
             id: req.params.imaId  
@@ -211,11 +211,11 @@ router.post('/edit/:imaId(\\d+)', function (req, res, next) {
                     id: req.body.postId,
                     updatedDate: dateTime,
                     code:req.body.code,
-                    title:req.body.title.replace('\"',' '), 
-                    title_en:req.body.title_en.replace('\"',' '), 
+                    title:req.body.title.split('\"').join(' '), 
+                    title_en:req.body.title_en.split('\"').join(' '), 
                     type:req.body.type,
-                    description:req.body.description.replace('\"',' '), 
-                    description_en:req.body.description_en.replace('\"',' '), 
+                    description:req.body.description.split('\"').join(' '), 
+                    description_en:req.body.description_en.split('\"').join(' '), 
                     startDate:req.body.startDate,
                     endDate:req.body.endDate,
                     dateMask:req.body.dateMask

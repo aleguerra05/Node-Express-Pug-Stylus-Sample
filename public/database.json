@@ -987,6 +987,19 @@
       "startDate": "1927-01-01",
       "endDate": "1953-01-01",
       "dateMask": "yyyy"
+    },
+    {
+      "id": 77,
+      "updatedDate": "2019-02-18 00:25:31",
+      "code": "EUR001",
+      "title": "probando  comiilas   ",
+      "title_en": "este es el titulo:  okok ",
+      "type": "obra",
+      "description": "asd  ",
+      "description_en": "  qwe",
+      "startDate": "1986-01-01",
+      "endDate": "2020-01-01",
+      "dateMask": "yyyy"
     }
   ],
   "images": [
@@ -2732,6 +2745,13 @@
       "path": "images/CUB005_2. Cementerio Espada.jpg",
       "footNote": "",
       "footNote_en": ""
+    },
+    {
+      "path": "images/20160405_5703327bda5d4.png",
+      "postId": "77",
+      "footNote": " asd ",
+      "footNote_en": "   asd",
+      "id": 250
     }
   ]
 }
