@@ -8,9 +8,9 @@
       "type": "obra",
       "description": "En la lengua, la toponimia y algunas costumbres prevalece la herencia cultural de nuestros aborígenes. Hamaca, Habana, huracán y Guanabacoa son algunos de los vocablos heredados de nuestros aborígenes.",
       "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "startDate": "1400-1-1",
-      "endDate": "1492-1-1",
-      "updatedDate": "2019-02-17 20:13:39",
+      "startDate": "1999-01-01",
+      "endDate": "2020-01-01",
+      "updatedDate": "2019-02-18 01:04:37",
       "dateMask": "yyyy"
     },
     {
@@ -23,7 +23,7 @@
       "description_en": "and this is the description of another post",
       "updatedDate": "2019-01-08 18:36:00",
       "startDate": "1492-10-12",
-      "endDate": "",
+      "endDate": "2020-11-10",
       "dateMask": "dd/MM/yyyy"
     },
     {

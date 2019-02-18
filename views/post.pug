@@ -59,11 +59,12 @@ block content
         td(style='padding-left:20px')
           p Fecha Inicio:
           p
-            textarea(type="text" name="startDate" placeholder="" rows="1" cols="40" value=post.startDate) #{post.startDate}
+            input(type="date" name="startDate" value=post.startDate)
+            //textarea(type="text" name="startDate" placeholder="" rows="1" cols="40" value=post.startDate) #{post.startDate}
         td(style='padding-left:20px')
           p Fecha Fin:
           p
-            textarea(type="text" name="endDate" placeholder="" rows="1" cols="40" value=post.endDate) #{post.endDate}
+            input(type="date" name="endDate" value=post.endDate)
     input(type="submit" value="Actualizar Contenido")
 
   p
