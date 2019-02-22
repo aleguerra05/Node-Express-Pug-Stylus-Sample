@@ -26,18 +26,14 @@ block content
               if i % 4 == 0
                 tr
               td 
-                a(href='/posts/' + val.id) #{val.code}
-                  // .tooltip
-                    //spam #{val.title}
+                a(href='/posts/' + val.id data-tooltip=val.title) #{val.code}
                 p
           else if posts.length
             each val,i in posts
               if i % 4 == 0
                 tr
               td 
-                a(href='/posts/' + val.id) #{val.code}
-                  // .tooltip
-                    //spam #{val.title}
+                a(href='/posts/' + val.id data-tooltip=val.title) #{val.code}
                 p
       td
         table(style='width:100%')
@@ -46,9 +42,7 @@ block content
               if i % 4 == 0
                 tr
               td 
-                a(href='/posts/' + val.id) #{val.code}
-                  // .tooltip
-                    //spam #{val.title}
+                a(href='/posts/' + val.id data-tooltip=val.title) #{val.code}
                 p
     
 
