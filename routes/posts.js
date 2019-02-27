@@ -79,8 +79,6 @@ router.post('/', function (req, res, next) {
                         var args = {
                             data: { 
                                 code: req.body.code_prefix + req.body.code_number, 
-                                code_prefix: req.body.code_prefix, 
-                                code_number: req.body.code_number, 
                                 title: req.body.title.split('\"').join(''), 
                                 title_en: req.body.title_en.split('\"').join(''), 
                                 type: req.body.type, 
@@ -133,6 +131,10 @@ router.get('/:postId(\\d+)', function (req, res, next) {
     client.methods.getPosts(args, function (data, response) {
         console.log(data);
         console.log(response.statusCode);
+
+        data.code_prefix = data.code.substr(0,3);
+        data.code_number = data.code.substr(3,3);
+
         if (response.statusCode == 200) {
 
             var args = { path: { "id": req.params.postId } };
@@ -192,8 +194,6 @@ router.post('/edit/:postId(\\d+)', function (req, res, next) {
                             data: { 
                                 id: req.body.id,
                                 code: req.body.code_prefix + req.body.code_number, 
-                                code_prefix: req.body.code_prefix, 
-                                code_number: req.body.code_number, 
                                 title: req.body.title.split('\"').join(''),
                                 title_en: req.body.title_en.split('\"').join(''), 
                                 type: req.body.type, 
