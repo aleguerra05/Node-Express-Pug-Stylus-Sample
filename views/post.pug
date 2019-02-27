@@ -18,9 +18,16 @@ block content
     table
       tr  
         td
-          p Código:
+          p Código país:
           p
-            textarea(type="text" name="code" placeholder="" rows="1" cols="10" value=post.code) #{post.code}
+            select(name="code_prefix" placeholder="") #{post.code_prefix}
+              option(value=CUB selected=post.code_prefix=="CUB"?true:false) CUB
+              option(value=EUR selected=post.code_prefix=="EUR"?true:false) EUR
+        td(style='padding-left:20px')
+          p Código número:
+          P 
+            textarea(type="text" maxlength="3" name="code_number" placeholder="" rows="1" cols="10" value=post.code) #{post.code_number}
+
         td(style='padding-left:20px')
           P Tipo:
           p
@@ -95,7 +102,8 @@ block content
                 textarea(type="text" name="footNote_en" placeholder="" rows="3" cols="40" value=ima.footNote_en) #{ima.footNote_en}
               
               // values of the image's post belong
-              input(type="hidden" name="code" placeholder="" value=post.code)
+              input(type="hidden" name="code_prefix" placeholder="" value=post.code_prefix)
+              input(type="hidden" name="code_number" placeholder="" value=post.code_number)
               input(type="hidden" name="title" placeholder="" value=post.title)
               input(type="hidden" name="title_en" placeholder="" value=post.title_en)
               input(type="hidden" name="type" placeholder="" value=post.type)
@@ -113,7 +121,8 @@ block content
                 
                 // values of the image's post belong
                 input(type="hidden" name="postId" placeholder="" value=post.id)
-                input(type="hidden" name="code" placeholder="" value=post.code)
+                input(type="hidden" name="code_prefix" placeholder="" value=post.code_prefix)
+                input(type="hidden" name="code_number" placeholder="" value=post.code_number)
                 input(type="hidden" name="title" placeholder="" value=post.title)
                 input(type="hidden" name="title_en" placeholder="" value=post.title_en)
                 input(type="hidden" name="type" placeholder="" value=post.type)
@@ -152,7 +161,8 @@ block content
             textarea(type="text" name="footNote_en" placeholder="" rows="2" cols="60")
 
     // values of the image's post belong
-    input(type="hidden" name="code" placeholder="" value=post.code)
+    input(type="hidden" name="code_prefix" placeholder="" value=post.code_prefix)
+    input(type="hidden" name="code_number" placeholder="" value=post.code_number)
     input(type="hidden" name="title" placeholder="" value=post.title)
     input(type="hidden" name="title_en" placeholder="" value=post.title_en)
     input(type="hidden" name="type" placeholder="" value=post.type)

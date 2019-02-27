@@ -30,6 +30,8 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
 
+    req.body.code = req.body.code_prefix+req.body.code_number;
+
     if(req.body != null && req.body.code != null )
     {
         client.get("http://localhost:3001/posts?code="+req.body.code, function (data, response) {
@@ -51,9 +53,12 @@ router.post('/', function (req, res, next) {
                     replace(/T/, ' ').      // replace T with a space
                     replace(/\..+/, '');    // delete the dot and everything after
                     console.log(req.body);
+                    
                     if (req.body != null 
-                        && req.body.code != null 
-                        && req.body.code != '' 
+                        && req.body.code_prefix != null 
+                        && req.body.code_prefix != '' 
+                        && req.body.code_number != null 
+                        && req.body.code_number != '' 
                         && req.body.title != null 
                         && req.body.title != ''
                         && req.body.title_en != null 
@@ -73,7 +78,9 @@ router.post('/', function (req, res, next) {
                     ){
                         var args = {
                             data: { 
-                                code: req.body.code, 
+                                code: req.body.code_prefix + req.body.code_number, 
+                                code_prefix: req.body.code_prefix, 
+                                code_number: req.body.code_number, 
                                 title: req.body.title.split('\"').join(''), 
                                 title_en: req.body.title_en.split('\"').join(''), 
                                 type: req.body.type, 
@@ -145,52 +152,85 @@ router.get('/:postId(\\d+)', function (req, res, next) {
 });
 
 router.post('/edit/:postId(\\d+)', function (req, res, next) {
-    var dateTime = new Date().toISOString().
-        replace(/T/, ' ').      // replace T with a space
-        replace(/\..+/, '');    // delete the dot and everything after
-    if (req.body != null 
-        && req.body.id !=null
-        && req.body.code != null 
-        && req.body.title != null 
-        && req.body.title_en != null 
-        && req.body.type != null 
-        && req.body.description != null
-        && req.body.description_en != null
-        && req.body.startDate != null
-        && req.body.endDate != null
-        && req.body.dateMask != null) {
-        var args = {
-            data: { 
-                id: req.body.id,
-                code: req.body.code, 
-                title: req.body.title.split('\"').join(''),
-                title_en: req.body.title_en.split('\"').join(''), 
-                type: req.body.type, 
-                description: req.body.description.split('\"').join(''), 
-                description_en: req.body.description_en.split('\"').join(''), 
-                startDate: req.body.startDate,
-                endDate: req.body.endDate,
-                updatedDate: dateTime, //"2019-01-12 12:00:00",
-                dateMask: req.body.dateMask
-            },
-            path:{
-              id: req.body.id  
-            },
-            headers: { "Content-Type": "application/json" }
-        };
-        client.methods.editPost(args, function (data, response) {
+    req.body.code = req.body.code_prefix+req.body.code_number;
+
+    if(req.body != null && req.body.code != null )
+    {
+        client.get("http://localhost:3001/posts?code="+req.body.code, function (data, response) {
             console.log(response.statusCode);
             if (response.statusCode == 200) {
-                //res.render('post', { title: 'Contenido actualizado satisfactoriamente!', posts: data });
-                res.redirect('back');
-            }
-            else {
-                res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
-            }
-        });
-    }
-    else
-        res.render('message', { title: 'Error', message: 'Error actualizando Contenido! Faltan campos por llenar'});        
+                console.log('search 200');
+                console.log(data);
+
+                if(data.length>0){
+                    var hiperlink = "<a href=\"http://localhost:3001/posts?code="+req.body.code+">"+req.body.code+"</a>";
+                    var htmlSection = !hiperlink
+                    if (data[0].id != req.body.id)
+                        return res.render('message', { title: 'Error', message: 'Ya existe un contenido con el codigo:'+req.body.code});
+                    //return res.render('message', { title: 'Error', message: !'Ya existe un contenido con el codigo: #{'+hiperlink+'}'});
+                }
+                
+                    console.log('no encontro el code');
+
+
+                    var dateTime = new Date().toISOString().
+                        replace(/T/, ' ').      // replace T with a space
+                        replace(/\..+/, '');    // delete the dot and everything after
+                    if (req.body != null 
+                        && req.body.id !=null
+                        && req.body.code_prefix != null 
+                        && req.body.code_number != null 
+                        && req.body.title != null 
+                        && req.body.title_en != null 
+                        && req.body.type != null 
+                        && req.body.description != null
+                        && req.body.description_en != null
+                        && req.body.startDate != null
+                        && req.body.endDate != null
+                        && req.body.dateMask != null) {
+                        var args = {
+                            data: { 
+                                id: req.body.id,
+                                code: req.body.code_prefix + req.body.code_number, 
+                                code_prefix: req.body.code_prefix, 
+                                code_number: req.body.code_number, 
+                                title: req.body.title.split('\"').join(''),
+                                title_en: req.body.title_en.split('\"').join(''), 
+                                type: req.body.type, 
+                                description: req.body.description.split('\"').join(''), 
+                                description_en: req.body.description_en.split('\"').join(''), 
+                                startDate: req.body.startDate,
+                                endDate: req.body.endDate,
+                                updatedDate: dateTime, //"2019-01-12 12:00:00",
+                                dateMask: req.body.dateMask
+                            },
+                            path:{
+                                id: req.body.id  
+                            },
+                            headers: { "Content-Type": "application/json" }
+                        };
+                        client.methods.editPost(args, function (data, response) {
+                            console.log(response.statusCode);
+                            if (response.statusCode == 200) {
+                                //res.render('post', { title: 'Contenido actualizado satisfactoriamente!', posts: data });
+                                res.redirect('back');
+                            }
+                            else {
+                                res.render('message', { title: 'Error', message: 'Cantidad de Contenidos: ' + response.statusMessage });
+                            }
+                        });
+                    }
+                    else
+                        res.render('message', { title: 'Error', message: 'Error actualizando Contenido! Faltan campos por llenar'});        
+                    }
+                
+                else
+                {
+                    console.log('search 200');
+                    return res.render('message', { title: 'Error', message: 'Error adicionando Contenido: ' + response.statusMessage });
+                }
+            });
+        }
 });
 
 router.post('/del/:postId',function (req, res, next) {

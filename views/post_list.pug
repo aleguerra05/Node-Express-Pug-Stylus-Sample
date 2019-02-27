@@ -11,10 +11,18 @@ block content
     table
       tr
         td
-          p Código:
-            textarea(type="text" name="code" placeholder="" rows="1" cols="10")
+          p Código país:
+          p
+            select(name="code_prefix" placeholder="")
+              option(value=CUB) CUB
+              option(value=EUR) EUR
+        td(style='padding-left:20px')
+          p Código número:
+          P 
+            textarea(type="text" name="code_number" placeholder="" rows="1" cols="10")
         td(style='padding-left:20px')
           P Tipo:
+          p
             select(name="type" placeholder="")
               option(value=obra) obra
               option(value=personalidad) personalidad
